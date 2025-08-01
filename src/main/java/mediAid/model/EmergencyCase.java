@@ -1,22 +1,27 @@
 package mediAid.model;
 
-public abstract class EmergencyCase {
+public class EmergencyCase {
+    private String type;
+    private String description;
 
-    protected String name;
-    protected String description;
-
-    public EmergencyCase(String name, String description) {
-        this.name = name;
+    public EmergencyCase(String type, String description) {
+        this.type = type;
         this.description = description;
     }
 
-    public String getName() {
-        return name;
+    public String getType() {
+        return type;
     }
 
     public String getDescription() {
         return description;
     }
 
-    public abstract String getTreatment();
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }
