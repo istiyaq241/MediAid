@@ -3,10 +3,11 @@
   "configurations": [
     {
       "type": "java",
-      "name": "Run JavaFX",
+      "name": "Launch Main",
       "request": "launch",
       "mainClass": "mediAid.Main",
-      "vmArgs": "--module-path \"C:/JavaProjects/MediAid/lib/javafx-sdk-21/lib\" --add-modules javafx.controls,javafx.fxml"
+      "projectName": "MediAid",
+      "vmArgs": "--module-path ${workspaceFolder}/MediAid/lib/javafx-sdk-21/lib --add-modules javafx.controls,javafx.fxml"
     }
   ]
 }
