@@ -10,8 +10,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        Label welcome = new Label("Welcome to MediAid");
+        System.out.println("✅ JavaFX GUI launch triggered");
 
+        Label welcome = new Label("Welcome to MediAid");
         VBox root = new VBox(10);
         root.getChildren().add(welcome);
 
@@ -26,4 +27,3 @@ public class Main extends Application {
     }
 }
 
-//syncing new devie
