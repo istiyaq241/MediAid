@@ -1,4 +1,4 @@
-package mediAid;
+package main.java.mediAid;
 
 import javafx.application.Application;
 import javafx.scene.Scene;

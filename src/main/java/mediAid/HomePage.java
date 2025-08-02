@@ -1,4 +1,4 @@
-package mediAid;
+package main.java.mediAid;
 
 import javafx.scene.Scene;
 import javafx.scene.control.Label;

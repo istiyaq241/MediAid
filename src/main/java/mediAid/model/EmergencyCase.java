@@ -1,4 +1,4 @@
-package mediAid.model;
+package main.java.mediAid.model;
 
 public class EmergencyCase {
     private String type;
