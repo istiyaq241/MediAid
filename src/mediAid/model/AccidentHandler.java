@@ -25,7 +25,7 @@ public class AccidentHandler {
 
         burn.setOnAction(e -> info.setText("🔥 Burn: Cool area under running water for 10 minutes."));
         snake.setOnAction(e -> info.setText("🐍 Snake Bite: Keep victim calm, immobilize limb."));
-        emergency.setOnAction(e -> new EmergencyCase(stage).show());
+        emergency.setOnAction(e -> new mediAid.EmergencyCase(stage).show());
         back.setOnAction(e -> new HomePage(stage).show());
 
         for (Button b : new Button[]{burn, snake, emergency, back}) {
