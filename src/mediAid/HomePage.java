@@ -1,20 +1,40 @@
 package mediAid;
 
+import javafx.geometry.Insets;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class HomePage {
-    public void show(Stage primaryStage) {
-        Label label = new Label("Choose: Accident or Disease");
+    private final Stage stage;
 
-        VBox layout = new VBox(10);
-        layout.getChildren().addAll(label);
+    public HomePage(Stage stage) {
+        this.stage = stage;
+    }
 
-        Scene scene = new Scene(layout, 400, 200);
-        primaryStage.setScene(scene);
-        primaryStage.setTitle("MediAid - Home");
-        primaryStage.show();
+    public void show() {
+        Label title = new Label("MediAid Home");
+        title.setStyle("-fx-font-size: 20px; -fx-text-fill: #ff4c4c; -fx-font-weight: bold;");
+
+        Button accidentBtn = new Button("🚑 Accident Help");
+        Button diseaseBtn = new Button("🤒 Disease Help");
+
+        accidentBtn.setOnAction(e -> new mediAid.AccidentHandler(stage).show());
+        diseaseBtn.setOnAction(e -> new mediAid.DiseaseHandler(stage).show());
+
+        accidentBtn.setMaxWidth(Double.MAX_VALUE);
+        diseaseBtn.setMaxWidth(Double.MAX_VALUE);
+
+        VBox root = new VBox(15, title, accidentBtn, diseaseBtn);
+        root.setPadding(new Insets(30));
+        root.setStyle("-fx-background-color: #1e1e1e;");
+        root.setPrefSize(400, 250);
+
+        Scene scene = new Scene(root);
+        stage.setTitle("MediAid System – Home");
+        stage.setScene(scene);
+        stage.show();
     }
 }

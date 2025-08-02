@@ -1,27 +1,41 @@
-package mediAid.model;
+package mediAid;
+
+import javafx.geometry.Insets;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 public class EmergencyCase {
-    private String type;
-    private String description;
+    private final Stage stage;
 
-    public EmergencyCase(String type, String description) {
-        this.type = type;
-        this.description = description;
+    public EmergencyCase(Stage stage) {
+        this.stage = stage;
     }
 
-    public String getType() {
-        return type;
-    }
+    public void show() {
+        Label title = new Label("Emergency Guidelines");
+        title.setStyle("-fx-font-size: 18px; -fx-text-fill: #ff4c4c; -fx-font-weight: bold;");
 
-    public String getDescription() {
-        return description;
-    }
+        Label cpr = new Label("• CPR: Call help, compress chest rhythmically.");
+        Label choking = new Label("• Choking: Perform abdominal thrusts.");
+        Label bleed = new Label("• Heavy bleeding: Apply pressure, elevate limb.");
+        for (Label l : new Label[]{cpr, choking, bleed}) {
+            l.setStyle("-fx-text-fill: #ffffff;");
+        }
 
-    public void setType(String type) {
-        this.type = type;
-    }
+        Button back = new Button("← Back");
+        back.setOnAction(e -> new mediAid.AccidentHandler(stage).show());
 
-    public void setDescription(String description) {
-        this.description = description;
+        VBox root = new VBox(10, title, cpr, choking, bleed, back);
+        root.setPadding(new Insets(25));
+        root.setStyle("-fx-background-color: #1e1e1e;");
+        root.setPrefSize(400, 300);
+
+        Scene scene = new Scene(root);
+        stage.setTitle("Emergency Case");
+        stage.setScene(scene);
+        stage.show();
     }
 }
