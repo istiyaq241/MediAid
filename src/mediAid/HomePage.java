@@ -6,6 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import mediAid.model.DiseaseHandler;
 
 public class HomePage {
     private final Stage stage;
@@ -22,12 +23,12 @@ public class HomePage {
         Button diseaseBtn = new Button("🤒 Disease Help");
 
         accidentBtn.setOnAction(e -> new mediAid.AccidentHandler(stage).show());
-        diseaseBtn.setOnAction(e -> new mediAid.DiseaseHandler(stage).show());
+        diseaseBtn.setOnAction(e -> new DiseaseHandler(stage).show());
 
         accidentBtn.setMaxWidth(Double.MAX_VALUE);
         diseaseBtn.setMaxWidth(Double.MAX_VALUE);
 
-        VBox root = new VBox(15, title, accidentBtn, diseaseBtn);
+        VBox root = new VBox(20, title, accidentBtn, diseaseBtn);
         root.setPadding(new Insets(30));
         root.setStyle("-fx-background-color: #1e1e1e;");
         root.setPrefSize(400, 250);

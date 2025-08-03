@@ -1,10 +1,13 @@
-package mediAid;
+package mediAid.model;
 
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,92 +19,93 @@ public class DiseaseHandler {
     }
 
     public void show() {
-        Label title = new Label("Disease Symptom Checker");
+        Label title = new Label("Emergency Symptom Checker");
         title.setStyle("-fx-font-size: 18px; -fx-text-fill: #9b4dff; -fx-font-weight: bold;");
 
-        Label ageLabel = new Label("Enter Age:");
-        ageLabel.setStyle("-fx-text-fill: white;");
+        Label ageLabel = new Label("Age:");
         TextField ageField = new TextField();
-
-        Label genderLabel = new Label("Select Gender:");
-        genderLabel.setStyle("-fx-text-fill: white;");
+        Label genderLabel = new Label("Gender:");
         ToggleGroup genderGroup = new ToggleGroup();
         RadioButton male = new RadioButton("Male");
         RadioButton female = new RadioButton("Female");
+        RadioButton other = new RadioButton("Other");
         male.setToggleGroup(genderGroup);
         female.setToggleGroup(genderGroup);
-        male.setStyle("-fx-text-fill: white;");
-        female.setStyle("-fx-text-fill: white;");
+        other.setToggleGroup(genderGroup);
+        HBox genderBox = new HBox(10, male, female, other);
 
-        Label symptomsLabel = new Label("Select symptoms:");
-        symptomsLabel.setStyle("-fx-text-fill: white;");
+        Label locationLabel = new Label("Location:");
+        ChoiceBox<String> locationBox = new ChoiceBox<>();
+        locationBox.getItems().addAll("Urban", "Rural", "Flooded", "Forest", "Coastal", "Disaster zone");
+
+        Label symptomsLabel = new Label("Select Symptoms:");
         CheckBox fever = new CheckBox("Fever");
         CheckBox cold = new CheckBox("Cold");
         CheckBox headache = new CheckBox("Headache");
-        CheckBox stomach = new CheckBox("Stomachache");
-        for (CheckBox cb : new CheckBox[]{fever, cold, headache, stomach}) {
-            cb.setStyle("-fx-text-fill: white;");
+        CheckBox stomachache = new CheckBox("Stomachache");
+        CheckBox bodyache = new CheckBox("Body ache");
+        CheckBox nausea = new CheckBox("Nausea");
+        CheckBox vomiting = new CheckBox("Vomiting");
+        CheckBox rash = new CheckBox("Skin rash");
+        CheckBox itching = new CheckBox("Itching");
+        CheckBox redpatch = new CheckBox("Red patches");
+        CheckBox crying = new CheckBox("Crying/Shaking");
+        CheckBox breath = new CheckBox("Short breath");
+        CheckBox feet = new CheckBox("Swollen feet");
+        CheckBox vision = new CheckBox("Blurred vision");
+
+        List<CheckBox> symptomChecks = List.of(fever, cold, headache, stomachache, bodyache, nausea, vomiting,
+                rash, itching, redpatch, crying, breath, feet, vision);
+
+        GridPane symptomGrid = new GridPane();
+        symptomGrid.setHgap(10);
+        symptomGrid.setVgap(5);
+        for (int i = 0; i < symptomChecks.size(); i++) {
+            symptomGrid.add(symptomChecks.get(i), i % 2, i / 2);
         }
 
+        Label result = new Label();
+        result.setWrapText(true);
         Button submit = new Button("Get Advice");
         Button back = new Button("← Back");
-        Label result = new Label();
-        result.setStyle("-fx-text-fill: white;");
 
         submit.setOnAction(e -> {
-            String ageText = ageField.getText().trim();
-            Toggle selectedGender = genderGroup.getSelectedToggle();
+            try {
+                int age = Integer.parseInt(ageField.getText().trim());
+                String gender = ((RadioButton) genderGroup.getSelectedToggle()).getText();
+                String location = locationBox.getValue();
 
-            if (ageText.isEmpty() || selectedGender == null) {
-                result.setText("Please enter age and select gender.");
-                return;
+                List<String> selectedSymptoms = new ArrayList<>();
+                for (CheckBox cb : symptomChecks) {
+                    if (cb.isSelected()) selectedSymptoms.add(cb.getText());
+                }
+
+                if (selectedSymptoms.isEmpty()) {
+                    result.setText("Select at least one symptom.");
+                    return;
+                }
+
+                String advice = ConditionAdvisor.getAdvice(selectedSymptoms, age, gender, location);
+                result.setText(advice);
+
+            } catch (Exception ex) {
+                result.setText("Please fill in all required fields.");
             }
-
-            int age = Integer.parseInt(ageText);
-            List<String> symptoms = new ArrayList<>();
-            if (fever.isSelected()) symptoms.add("Fever");
-            if (cold.isSelected()) symptoms.add("Cold");
-            if (headache.isSelected()) symptoms.add("Headache");
-            if (stomach.isSelected()) symptoms.add("Stomachache");
-
-            if (symptoms.isEmpty()) {
-                result.setText("Select at least one symptom.");
-                return;
-            }
-
-            String advice = "";
-            if (symptoms.contains("Fever") && symptoms.contains("Cold")) {
-                advice = "Stay warm, drink fluids, and use paracetamol if needed.";
-            } else if (symptoms.contains("Headache") && symptoms.contains("Stomachache")) {
-                advice = "Rest, drink water, avoid solid food, consider paracetamol.";
-            } else if (symptoms.contains("Stomachache")) {
-                advice = "Avoid dairy, drink ORS, and rest.";
-            } else if (symptoms.contains("Fever")) {
-                advice = "Monitor temperature, use cold compress, stay hydrated.";
-            } else {
-                advice = "Rest and monitor symptoms. Seek help if worsens.";
-            }
-
-            result.setText("Advice: " + advice);
         });
 
         back.setOnAction(e -> new mediAid.HomePage(stage).show());
 
-        for (Button b : new Button[]{submit, back}) {
-            b.setMaxWidth(Double.MAX_VALUE);
-        }
-
         VBox root = new VBox(10,
                 title,
                 ageLabel, ageField,
-                genderLabel, male, female,
-                symptomsLabel, fever, cold, headache, stomach,
+                genderLabel, genderBox,
+                locationLabel, locationBox,
+                symptomsLabel, symptomGrid,
                 submit, result, back
         );
-
         root.setPadding(new Insets(25));
         root.setStyle("-fx-background-color: #1e1e1e;");
-        root.setPrefSize(420, 480);
+        root.setPrefSize(480, 600);
 
         Scene scene = new Scene(root);
         stage.setTitle("Disease Help");

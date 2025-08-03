@@ -28,8 +28,8 @@ public class EmergencyCase {
         Button back = new Button("← Back");
         back.setOnAction(e -> new mediAid.AccidentHandler(stage).show());
 
-        VBox root = new VBox(10, title, cpr, choking, bleed, back);
-        root.setPadding(new Insets(25));
+        VBox root = new VBox(15, title, cpr, choking, bleed, back);
+        root.setPadding(new Insets(30));
         root.setStyle("-fx-background-color: #1e1e1e;");
         root.setPrefSize(400, 300);
 
