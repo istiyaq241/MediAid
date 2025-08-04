@@ -31,7 +31,7 @@ public class ReminderManager {
                     String condition = parts[1];
                     long startTime = Long.parseLong(parts[2]);
 
-                    long hoursPassed = (now - startTime) / 3600;
+                    long hoursPassed = (now - startTime) / 60;
                     if (hoursPassed < MAX_DURATION_HOURS) {
                         reminders.add("Reminder: " + name + " - " + condition + " (" + (72 - hoursPassed) + "h left)");
                     } else {

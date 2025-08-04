@@ -13,3 +13,4 @@ Shaom,Itching + Swollen feet,1754283299
 Shaom,Headache + Itching + Swollen feet,1754283300
 Shaom,Headache + Itching + Swollen feet,1754283301
 Shaom,Headache + Skin rash + Itching + Swollen feet,1754283303
+Shaom,Headache + Skin rash,1754283979
