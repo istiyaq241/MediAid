@@ -19,8 +19,18 @@ public class DiseaseHandler {
     }
 
     public void show() {
+        Alert consent = new Alert(Alert.AlertType.CONFIRMATION);
+        consent.setTitle("User Consent");
+        consent.setHeaderText("MediAid Disclaimer");
+        consent.setContentText("By continuing, you agree MediAid only provides temporary emergency help and is not a replacement for professional treatment.");
+        consent.showAndWait();
+
         Label title = new Label("Emergency Symptom Checker");
         title.setStyle("-fx-font-size: 18px; -fx-text-fill: #ff5e5e; -fx-font-weight: bold;");
+
+        Label nameLabel = new Label("Name:");
+        nameLabel.setStyle("-fx-text-fill: #f2f2f2;");
+        TextField nameField = new TextField();
 
         Label ageLabel = new Label("Age:");
         ageLabel.setStyle("-fx-text-fill: #f2f2f2;");
@@ -81,6 +91,7 @@ public class DiseaseHandler {
 
         submit.setOnAction(e -> {
             try {
+                String name = nameField.getText().trim();
                 int age = Integer.parseInt(ageField.getText().trim());
                 String gender = ((RadioButton) genderGroup.getSelectedToggle()).getText();
                 String location = locationBox.getValue();
@@ -90,13 +101,16 @@ public class DiseaseHandler {
                     if (cb.isSelected()) selectedSymptoms.add(cb.getText());
                 }
 
-                if (selectedSymptoms.isEmpty()) {
-                    result.setText("⚠️ Select at least one symptom.");
+                if (name.isEmpty() || selectedSymptoms.isEmpty()) {
+                    result.setText("⚠️ Please enter name and select symptoms.");
                     return;
                 }
 
                 String advice = ConditionAdvisor.getAdvice(selectedSymptoms, age, gender, location);
                 result.setText(advice);
+
+                // Store reminder
+                mediAid.model.ReminderManager.addReminder(name, String.join(" + ", selectedSymptoms));
 
             } catch (Exception ex) {
                 result.setText("⚠️ Please fill in all required fields.");
@@ -107,6 +121,7 @@ public class DiseaseHandler {
 
         VBox root = new VBox(12,
                 title,
+                nameLabel, nameField,
                 ageLabel, ageField,
                 genderLabel, genderBox,
                 locationLabel, locationBox,
@@ -115,7 +130,7 @@ public class DiseaseHandler {
         );
         root.setPadding(new Insets(25));
         root.setStyle("-fx-background-color: #2a2a2a;");
-        root.setPrefSize(520, 620);
+        root.setPrefSize(520, 650);
 
         Scene scene = new Scene(root);
         stage.setTitle("Disease Help");
