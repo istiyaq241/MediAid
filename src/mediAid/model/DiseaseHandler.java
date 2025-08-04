@@ -20,11 +20,14 @@ public class DiseaseHandler {
 
     public void show() {
         Label title = new Label("Emergency Symptom Checker");
-        title.setStyle("-fx-font-size: 18px; -fx-text-fill: #9b4dff; -fx-font-weight: bold;");
+        title.setStyle("-fx-font-size: 18px; -fx-text-fill: #ff5e5e; -fx-font-weight: bold;");
 
         Label ageLabel = new Label("Age:");
+        ageLabel.setStyle("-fx-text-fill: #f2f2f2;");
         TextField ageField = new TextField();
+
         Label genderLabel = new Label("Gender:");
+        genderLabel.setStyle("-fx-text-fill: #f2f2f2;");
         ToggleGroup genderGroup = new ToggleGroup();
         RadioButton male = new RadioButton("Male");
         RadioButton female = new RadioButton("Female");
@@ -32,13 +35,18 @@ public class DiseaseHandler {
         male.setToggleGroup(genderGroup);
         female.setToggleGroup(genderGroup);
         other.setToggleGroup(genderGroup);
+        male.setStyle("-fx-text-fill: #f2f2f2;");
+        female.setStyle("-fx-text-fill: #f2f2f2;");
+        other.setStyle("-fx-text-fill: #f2f2f2;");
         HBox genderBox = new HBox(10, male, female, other);
 
         Label locationLabel = new Label("Location:");
+        locationLabel.setStyle("-fx-text-fill: #f2f2f2;");
         ChoiceBox<String> locationBox = new ChoiceBox<>();
         locationBox.getItems().addAll("Urban", "Rural", "Flooded", "Forest", "Coastal", "Disaster zone");
 
         Label symptomsLabel = new Label("Select Symptoms:");
+        symptomsLabel.setStyle("-fx-text-fill: #f2f2f2;");
         CheckBox fever = new CheckBox("Fever");
         CheckBox cold = new CheckBox("Cold");
         CheckBox headache = new CheckBox("Headache");
@@ -56,6 +64,7 @@ public class DiseaseHandler {
 
         List<CheckBox> symptomChecks = List.of(fever, cold, headache, stomachache, bodyache, nausea, vomiting,
                 rash, itching, redpatch, crying, breath, feet, vision);
+        symptomChecks.forEach(cb -> cb.setStyle("-fx-text-fill: #f2f2f2;"));
 
         GridPane symptomGrid = new GridPane();
         symptomGrid.setHgap(10);
@@ -66,6 +75,7 @@ public class DiseaseHandler {
 
         Label result = new Label();
         result.setWrapText(true);
+        result.setStyle("-fx-text-fill: #dddddd;");
         Button submit = new Button("Get Advice");
         Button back = new Button("← Back");
 
@@ -81,7 +91,7 @@ public class DiseaseHandler {
                 }
 
                 if (selectedSymptoms.isEmpty()) {
-                    result.setText("Select at least one symptom.");
+                    result.setText("⚠️ Select at least one symptom.");
                     return;
                 }
 
@@ -89,13 +99,13 @@ public class DiseaseHandler {
                 result.setText(advice);
 
             } catch (Exception ex) {
-                result.setText("Please fill in all required fields.");
+                result.setText("⚠️ Please fill in all required fields.");
             }
         });
 
         back.setOnAction(e -> new mediAid.HomePage(stage).show());
 
-        VBox root = new VBox(10,
+        VBox root = new VBox(12,
                 title,
                 ageLabel, ageField,
                 genderLabel, genderBox,
@@ -104,8 +114,8 @@ public class DiseaseHandler {
                 submit, result, back
         );
         root.setPadding(new Insets(25));
-        root.setStyle("-fx-background-color: #1e1e1e;");
-        root.setPrefSize(480, 600);
+        root.setStyle("-fx-background-color: #2a2a2a;");
+        root.setPrefSize(520, 620);
 
         Scene scene = new Scene(root);
         stage.setTitle("Disease Help");
