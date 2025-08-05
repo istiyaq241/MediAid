@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.SelectionPageController"
+            prefWidth="600" prefHeight="400"
+            style="-fx-background-color: #1e1e1e;">
+
+    <children>
+        <Button fx:id="accidentBtn" text="🤕 Accident Help"
+                layoutX="180" layoutY="120"
+                style="-fx-font-size: 16px; -fx-background-color: #ff4c4c; -fx-text-fill: white;"
+                prefWidth="240"/>
+
+        <Button fx:id="diseaseBtn" text="🤢 Disease Help"
+                layoutX="180" layoutY="200"
+                style="-fx-font-size: 16px; -fx-background-color: #4c6ef5; -fx-text-fill: white;"
+                prefWidth="240"/>
+    </children>
+</AnchorPane>

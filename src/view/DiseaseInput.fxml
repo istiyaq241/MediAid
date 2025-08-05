@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.DiseaseInputController"
+            prefWidth="600" prefHeight="550"
+            style="-fx-background-color: #1e1e1e;">
+
+    <children>
+        <VBox spacing="10" layoutX="100" layoutY="30">
+            <Label text="Name" style="-fx-text-fill: white;"/>
+            <TextField fx:id="nameField" prefWidth="300"
+                       style="-fx-text-fill: black; -fx-background-color: white;"/>
+            <Label fx:id="nameError" text="" style="-fx-text-fill: red;"/>
+
+            <Label text="Age" style="-fx-text-fill: white;"/>
+            <TextField fx:id="ageField" prefWidth="300"
+                       style="-fx-text-fill: black; -fx-background-color: white;"/>
+            <Label fx:id="ageError" text="" style="-fx-text-fill: red;"/>
+
+            <Label text="Location" style="-fx-text-fill: white;"/>
+            <ComboBox fx:id="locationBox" prefWidth="300"/>
+
+            <Label text="Other Symptoms" style="-fx-text-fill: white;"/>
+            <VBox fx:id="symptomList" spacing="5"/>
+
+            <Button text="→ Continue" onAction="#handleContinue"
+                    style="-fx-background-color: #4caf50; -fx-text-fill: white;" prefWidth="300"/>
+        </VBox>
+    </children>
+</AnchorPane>

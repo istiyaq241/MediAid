@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.DisclaimerController"
+            prefWidth="600" prefHeight="400"
+            style="-fx-background-color: #1e1e1e;">
+
+    <children>
+
+        <Label fx:id="disclaimerLabel"
+               layoutY="60"
+               layoutX="0"
+               text="⚠️ This app is for emergency use only – not for daily or regular use."
+               style="-fx-text-fill: red; -fx-font-size: 14px; -fx-font-weight: bold;"
+               AnchorPane.leftAnchor="0"
+               AnchorPane.rightAnchor="0"/>
+
+        <VBox spacing="20" layoutX="180" layoutY="130">
+            <Button fx:id="accidentBtn" text="🚑 Accident Help"
+                    style="-fx-font-size: 16px; -fx-background-color: #ff4c4c; -fx-text-fill: white;"
+                    prefWidth="240"/>
+            <Button fx:id="diseaseBtn" text="🤒 Disease Help"
+                    style="-fx-font-size: 16px; -fx-background-color: #4c6ef5; -fx-text-fill: white;"
+                    prefWidth="240"/>
+            <Button fx:id="aboutBtn" text="📄 About"
+                    style="-fx-font-size: 16px; -fx-background-color: #4caf50; -fx-text-fill: white;"
+                    prefWidth="240"/>
+            <Button fx:id="creditsBtn" text="👥 Credits"
+                    style="-fx-font-size: 16px; -fx-background-color: #4caf50; -fx-text-fill: white;"
+                    prefWidth="240"/>
+        </VBox>
+    </children>
+</AnchorPane>

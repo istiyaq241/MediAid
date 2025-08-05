@@ -1,0 +1,38 @@
+{
+  "fever": {
+    "advice": "Take paracetamol, stay hydrated, and rest.",
+    "image": "fever.jpg"
+  },
+  "cold": {
+    "advice": "Drink warm fluids, rest, and avoid cold exposure.",
+    "image": "cold.jpg"
+  },
+  "cough": {
+    "advice": "Use cough syrup and avoid dust. Stay hydrated.",
+    "image": "cough.jpg"
+  },
+  "headache": {
+    "advice": "Take rest in a quiet place. Use pain relievers if necessary.",
+    "image": "headache.jpg"
+  },
+  "stomachache": {
+    "advice": "Avoid heavy meals. Try antacids and drink water.",
+    "image": "stomachache.jpg"
+  },
+  "nausea": {
+    "advice": "Rest and take anti-nausea meds if available.",
+    "image": "nausea.jpg"
+  },
+  "vomiting": {
+    "advice": "Rehydrate with ORS. Avoid solid food initially.",
+    "image": "vomiting.jpg"
+  },
+  "bodyache": {
+    "advice": "Take mild painkillers and rest. Stay hydrated.",
+    "image": "bodyache.jpg"
+  },
+  "diarrhoea": {
+    "advice": "Drink plenty of fluids. Use ORS. Maintain hygiene.",
+    "image": "diarrhoea.jpg"
+  }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.CreditsPageController"
+            prefWidth="600" prefHeight="400"
+            style="-fx-background-color: #1e1e1e;">
+
+    <children>
+        <VBox layoutX="60" layoutY="60" spacing="15">
+            <Label fx:id="member1" style="-fx-text-fill: white; -fx-font-size: 14px;"/>
+            <Label fx:id="member2" style="-fx-text-fill: white; -fx-font-size: 14px;"/>
+            <Label fx:id="member3" style="-fx-text-fill: white; -fx-font-size: 14px;"/>
+            <Label fx:id="member4" style="-fx-text-fill: white; -fx-font-size: 14px;"/>
+            <Label fx:id="member5" style="-fx-text-fill: white; -fx-font-size: 14px;"/>
+        </VBox>
+
+        <Button text="← Go Back" layoutX="20" layoutY="20"
+                onAction="#goBack"
+                style="-fx-background-color: #ff4c4c; -fx-text-fill: white;"/>
+    </children>
+</AnchorPane>

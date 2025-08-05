@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.HomePage"
+            prefWidth="800" prefHeight="500"
+            style="-fx-background-color: #1e1e1e;">
+
+    <children>
+        <VBox spacing="20" layoutX="80" layoutY="100">
+            <Label text="Welcome to MediAid"
+                   style="-fx-text-fill: #ff4c4c; -fx-font-size: 20px; -fx-font-weight: bold;"/>
+            <Button fx:id="accidentBtn" text="🚑 Accident Help"
+                    style="-fx-background-color: #ff4c4c; -fx-text-fill: white;" prefWidth="200"/>
+            <Button fx:id="diseaseBtn" text="🤒 Disease Help"
+                    style="-fx-background-color: #4c6ef5; -fx-text-fill: white;" prefWidth="200"/>
+            <Button fx:id="aboutBtn" text="📄 About"
+                    style="-fx-background-color: #4caf50; -fx-text-fill: white;" prefWidth="200"/>
+            <Button fx:id="creditsBtn" text="👥 Credits"
+                    style="-fx-background-color: #4caf50; -fx-text-fill: white;" prefWidth="200"/>
+            <Button fx:id="reminderBtn" text="🕒 Reminder"
+                    style="-fx-background-color: #ffa500; -fx-text-fill: white;" prefWidth="200"/>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.AboutPageController"
+            prefWidth="600" prefHeight="400"
+            style="-fx-background-color: #1e1e1e;">
+
+    <children>
+        <TextArea fx:id="aboutText" layoutX="50" layoutY="60"
+                  prefWidth="500" prefHeight="250"
+                  editable="false"
+                  wrapText="true"
+                  style="-fx-font-size: 14px; -fx-control-inner-background: #ffffff;"/>
+
+        <Button text="← Go Back" layoutX="20" layoutY="20"
+                onAction="#goBack"
+                style="-fx-background-color: #ff4c4c; -fx-text-fill: white;"/>
+    </children>
+</AnchorPane>
