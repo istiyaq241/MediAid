@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:controller="mediAid.controller.AboutController"
+            xmlns:fx="http://javafx.com/fxml"
+            prefWidth="900" prefHeight="600"
+            minWidth="900" minHeight="600"
+            stylesheets="@../style/style.css">
+
+    <VBox fx:id="fadeContainer" opacity="0"
+          spacing="20" alignment="TOP_CENTER"
+          AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20"
+          AnchorPane.rightAnchor="20" AnchorPane.bottomAnchor="20">
+
+        <Label text="About MediAid" styleClass="section-title"/>
+
+        <ScrollPane fitToWidth="true" prefHeight="500">
+            <VBox spacing="15">
+                <padding>
+                    <Insets top="20" right="20" bottom="20" left="20"/>
+                </padding>
+
+                <!-- ✅ TextFlow for dynamic text -->
+                <TextFlow fx:id="aboutFlow" textAlignment="JUSTIFY" prefWidth="800">
+                    <Text fx:id="aboutText" wrappingWidth="780"/>
+                </TextFlow>
+                <fx:include source="components/GlobalNav.fxml"/>
+            </VBox>
+        </ScrollPane>
+    </VBox>
+</AnchorPane>

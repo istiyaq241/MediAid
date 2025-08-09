@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="mediAid.controller.AccidentInputController">
+    <top>
+        <VBox spacing="6" alignment="CENTER">
+            <Label text="Accident Input" style="-fx-font-size:18px; -fx-font-weight:bold;"/>
+            <Label fx:id="validationLabel" textFill="#d9534f"/>
+        </VBox>
+    </top>
+    <center>
+        <GridPane hgap="12" vgap="10">
+            <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+
+            <Label text="Name:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="nameField" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="240"/>
+
+            <Label text="Age:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="ageField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <Label text="Gender:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <ComboBox fx:id="genderBox" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+            <Label text="Location:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <ComboBox fx:id="locationBox" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+            <Label text="Detail:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <ComboBox fx:id="detailBox" GridPane.rowIndex="4" GridPane.columnIndex="1" prefWidth="240"/>
+        </GridPane>
+    </center>
+    <bottom>
+        <HBox spacing="12" alignment="CENTER">
+            <padding><Insets top="12" right="12" bottom="12" left="12"/></padding>
+            <Button text="← Back" onAction="#goBack"/>
+            <Button text="→ Continue" onAction="#submit"/>
+        </HBox>
+    </bottom>
+</BorderPane>

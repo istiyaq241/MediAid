@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="mediAid.controller.AccidentHelpController"
+            prefWidth="900" prefHeight="600"
+            minWidth="900" minHeight="600"
+            stylesheets="@../style/style.css">
+
+    <!-- TOP BAR -->
+    <top>
+        <HBox spacing="12" alignment="CENTER_LEFT">
+            <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+            <Button text="☰ Menu" onAction="#toggleMenu"/>
+            <Label text="🚑 Accident Help" style="-fx-font-size:18px; -fx-font-weight:bold;"/>
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Button text="Home" onAction="#goToHome"/>
+        </HBox>
+    </top>
+
+    <!-- LEFT SIDE MENU (hidden by default; controller toggles visible/managed) -->
+    <left>
+        <ScrollPane fx:id="sideScroll" styleClass="pane-transparent" fitToWidth="true" prefWidth="220"
+                    hbarPolicy="NEVER" vbarPolicy="AS_NEEDED">
+            <content>
+                <VBox fx:id="sideMenu" spacing="8" prefWidth="220">
+                    <padding><Insets top="12" right="12" bottom="12" left="12"/></padding>
+
+                    <!-- Quick Nav -->
+                    <Label text="Quick Navigation" style="-fx-font-weight:bold;"/>
+                    <Button text="🏠 Home" onAction="#goToHome" maxWidth="Infinity"/>
+                    <Button text="📝 Add Situation" onAction="#goToAddSituation" maxWidth="Infinity"/>
+                    <Button text="🤝 Volunteer" onAction="#goToVolunteer" maxWidth="Infinity"/>
+                    <Button text="🆘 Seek Help" onAction="#goToSeekHelp" maxWidth="Infinity"/>
+                    <Button text="ℹ About" onAction="#goToAbout" maxWidth="Infinity"/>
+                    <Button text="🎖 Credits" onAction="#goToCredits" maxWidth="Infinity"/>
+                    <Button text="⏰ Reminders" onAction="#goToReminder" maxWidth="Infinity"/>
+
+                    <Separator/>
+
+                    <!-- Service Directory -->
+                    <Label text="Emergency Contacts" style="-fx-font-weight:bold;"/>
+                    <GridPane hgap="8" vgap="8">
+                        <Label text="District:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                        <ComboBox fx:id="divisionBox" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="140"/>
+
+                        <Label text="Upazila:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                        <ComboBox fx:id="upazilaBox" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                        <Label text="Service:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                        <ComboBox fx:id="serviceBox" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                    </GridPane>
+
+                    <Button text="Find Number" onAction="#findServiceNumber" maxWidth="Infinity"/>
+                    <Label fx:id="serviceResult" wrapText="true"/>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </left>
+
+
+    <!-- CENTER: Accident tiles -->
+    <center>
+        <ScrollPane styleClass="pane-transparent" fitToWidth="true" prefWidth="220"
+                    hbarPolicy="NEVER" vbarPolicy="AS_NEEDED">
+            <content>
+                <!-- Wrap grid in an HBox so it stays centered even on wide screens -->
+                <HBox alignment="CENTER">
+                    <GridPane alignment="CENTER" hgap="16" vgap="16">
+                        <padding>
+                            <Insets top="20" right="20" bottom="20" left="20"/>
+                        </padding>
+
+                        <!-- row 0 -->
+                        <VBox spacing="6" GridPane.rowIndex="0" GridPane.columnIndex="0" alignment="CENTER">
+                            <ImageView fx:id="choking" fitWidth="160" fitHeight="120" pickOnBounds="true" preserveRatio="true"
+                                       onMouseClicked="#goToInput">
+                                <image><Image url="@../images/accident/choking.png"/></image>
+                            </ImageView>
+                            <Label text="Choking"/>
+                        </VBox>
+
+                        <VBox spacing="6" GridPane.rowIndex="0" GridPane.columnIndex="1" alignment="CENTER">
+                            <ImageView fx:id="cpr" fitWidth="160" fitHeight="120" pickOnBounds="true" preserveRatio="true"
+                                       onMouseClicked="#goToInput">
+                                <image><Image url="@../images/accident/cpr.png"/></image>
+                            </ImageView>
+                            <Label text="CPR"/>
+                        </VBox>
+
+                        <VBox spacing="6" GridPane.rowIndex="0" GridPane.columnIndex="2" alignment="CENTER">
+                            <ImageView fx:id="seizure" fitWidth="160" fitHeight="120" pickOnBounds="true" preserveRatio="true"
+                                       onMouseClicked="#goToInput">
+                                <image><Image url="@../images/accident/seizure.png"/></image>
+                            </ImageView>
+                            <Label text="Seizure"/>
+                        </VBox>
+
+                        <!-- row 1 -->
+                        <VBox spacing="6" GridPane.rowIndex="1" GridPane.columnIndex="0" alignment="CENTER">
+                            <ImageView fx:id="burn" fitWidth="160" fitHeight="120" pickOnBounds="true" preserveRatio="true"
+                                       onMouseClicked="#goToInput">
+                                <image><Image url="@../images/accident/burn.png"/></image>
+                            </ImageView>
+                            <Label text="Burn"/>
+                        </VBox>
+
+                        <VBox spacing="6" GridPane.rowIndex="1" GridPane.columnIndex="1" alignment="CENTER">
+                            <ImageView fx:id="bleeding" fitWidth="160" fitHeight="120" pickOnBounds="true" preserveRatio="true"
+                                       onMouseClicked="#goToInput">
+                                <image><Image url="@../images/accident/bleeding.png"/></image>
+                            </ImageView>
+                            <Label text="Bleeding"/>
+                        </VBox>
+
+                        <VBox spacing="6" GridPane.rowIndex="1" GridPane.columnIndex="2" alignment="CENTER">
+                            <ImageView fx:id="snakebite" fitWidth="160" fitHeight="120" pickOnBounds="true" preserveRatio="true"
+                                       onMouseClicked="#goToInput">
+                                <image><Image url="@../images/accident/snakebite.png"/></image>
+                            </ImageView>
+                            <Label text="Snakebite"/>
+                        </VBox>
+                    </GridPane>
+                </HBox>
+            </content>
+        </ScrollPane>
+    </center>
+
+
+    <!-- BOTTOM -->
+    <bottom>
+        <HBox spacing="16" alignment="CENTER">
+            <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+            <Label text="Tip: use the side menu to find emergency phone numbers for your area."/>
+        </HBox>
+    </bottom>
+</BorderPane>

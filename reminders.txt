@@ -1,4 +1,0 @@
-asif,cough,1754426063
-45,stomachache,1754426504
-sami,headache,1754426810
-abir,stomachache,1754429658

@@ -1,0 +1,88 @@
+Antibiotic|18:00|Shuvo Das|30|Male|InfectionKhairul|23|Female|Coastal|bodyache|vomiting|1754661898151
+Bira|78|Female|Forest|headache|headache,vomiting|1754662160728
+Abira|78|Female|Urban|headache|nausea,vomiting|1754662219147
+akira|45|Female|Urban|cold|bodyache,vomiting|1754662305050
+ASIM|67|Male|Urban|bodyache|fever,stomachache|1754662454417
+kuru|34|Female|Urban|bodyache|cough,vomiting|1754662877313
+samira|34|Female|Forest|diarrhoea|cough,vomiting|1754663192958
+sali|12|Female|Disaster Shelter|headache|nausea,vomiting|1754663412927
+samira|24|Female|Disaster Shelter|vomiting|bodyache,nausea|1754664555336
+aki|34|Female|Forest|cough|cough,vomiting|1754664906839
+abir|23|Other|Rural|vomiting|bodyache,diarrhoea|1754665271366
+habibi|12|Female|Rural|vomiting|nausea,fever|1754665697844
+arif|23|Male|Coastal|cough|cold,fever|1754665715225
+Amir|28|Other|Urban|vomiting|diarrhoea|1754666158543
+faaf|28|Other|Urban|vomiting||1754666180501
+akhi|34|Other|Urban|vomiting|diarrhoea|1754666717296
+abe salo|27|Other|Urban|vomiting|diarrhoea|1754667002176
+adad|25|Other|Urban|vomiting|headache,diarrhoea|1754667026869
+asdasd|28|Other|Urban|vomiting|headache,diarrhoea|1754667385968
+adasd|28|Other|Urban|vomiting|headache,diarrhoea|1754667467246
+sdsd|28|Other|Urban|vomiting|headache,diarrhoea|1754667833989
+addwd|23|Female|Coastal|vomiting|cough,diarrhoea|1754676961528
+adasd|23|Other|Coastal|vomiting||1754676984089
+wewe|23|Male|Rural|bodyache||1754677001309
+adad|23|Female|Urban|cold|cough|1754677416807
+dfdf|34|Female|Urban|fever|cold,nausea|1754677680292
+ewew|23|Other|Urban|vomiting|vomiting|1754677793627
+rere|34|Female|Forest|fever|vomiting,stomachache|1754678375462
+sdasas|20|Male|Rural|fever|headache|1754678709156
+fgfg|56|Male|Coastal|fever||1754679669759
+dfd|34|Male|Urban|headache|vomiting|1754679706849
+fgds|23|Female|Coastal|cold|cough|1754679853755
+asd|23|Male|Coastal|cold|fever|1754681218469
+sdsd|23|Male|Urban|cold|vomiting,fever|1754681433721
+sds|23|Female|Coastal|cold|fever|1754681922746
+sds|23|Female|Disaster Shelter|fever|vomiting|1754681946152
+ghg|34|Female|Coastal|fever|cough,fever|1754684142569
+wew|23|Female|Urban|headache|cold|1754685890465
+wewe|23|Female|Urban|cold|fever|1754686697486
+dsd|23|Female|Forest|bodyache|headache,fever|1754686870496
+sdsd|23|Female|Coastal|cold|cough,fever|1754687022734
+sdsd|23|Female|Rural|cold|cough,fever|1754687177201
+sds|23|Female|Coastal|bodyache|headache,fever|1754688157057
+sd|23|Female|Coastal|fever|headache,cold|1754689054036
+sdswd|23|Male|Coastal|fever|headache,cold|1754689471043
+DSD|23|Female|Urban|fever|headache,cough|1754689644341
+sds|23|Female|Forest|fever|headache|1754691376462
+sds|23|Male|Disaster Shelter|headache|bodyache,fever|1754692832932
+sds|23|Female|Disaster Shelter|headache|vomiting|1754692960358
+dsds|12|Female|Coastal|headache|fever,diarrhoea|1754693275938
+sdsd|23|Female|Urban|fever|cold,fever|1754694378201
+sds|23|Female|Urban|headache|cough,fever|1754694885807
+sdsd|23|Female|Urban|fever|cold,fever|1754694995372
+weew|23|Female|Coastal|stomachache|headache|1754695012354
+dfd|34|Female|Urban|headache||1754695059022
+Abir|34|Male|Coastal|bodyache|1754701307646
+amir|23|Male|Rural|cold|1754701400424
+kamir|23|Female|Disaster Shelter|cold|1754701652696
+Amir|23|Male|Forest|cough|1754702429796
+dsds|23|Male|Forest|fever|1754702447712
+xcxc|23|Male|Coastal|cough|1754702707161
+sdsd|23|Male|Disaster Shelter|fever|1754702728098
+asda|21|Male|Disaster Shelter|headache|1754703124252
+sdsd|21|Female|Disaster Shelter|cold|1754703132508
+sdsd|23|Male|Disaster Shelter|fever|1754705207033
+fdf|23|Male|Disaster Shelter|headache|1754705266375
+asa|23|Female|Disaster Shelter|headache|1754705396609
+hghgh|45|Female|Urban|fever|1754705640603
+hgghg|45|Female|Urban|headache|1754723197367
+sdsd|23|Other|Urban|cold|1754723238176
+adds|23|Male|Disaster Shelter|cold|1754724085349
+dfdf|45|Female|Urban|bodyache|1754724648508
+wow|34|Female|Forest|cough|1754727599602
+wow|23|Female|Urban|bodyache|1754727642295
+Abur|23|Male|Coastal|snakebite - non-venomous|1754732880924
+dsdsd|23|Female|Urban|burn - 2nd degree|1754733942607
+sdsd|23|Female|Forest|cough|1754734960992
+dfdf|23|Female|Disaster Shelter|nausea|1754735374683
+dfdfd|34|Female|Forest|burn - 2nd degree|1754735419252
+gvfv|45|Male|Rural|snakebite - non-venomous|1754735437755
+sds|32|Female|Urban|stomachache|1754736225295
+dfd|34|Female|Coastal|burn - 2nd degree|1754736354784
+sdsd|23|Female|Urban|snakebite - venomous|1754736713752
+ghg|45|Male|Urban|snakebite - venomous|1754738085395
+sd|23|Female|Urban|bodyache|1754738223355
+xgdf|34|Female|Urban|snakebite - non-venomous|1754740268587
+dsds|23|Female|Urban|snakebite - non-venomous|1754743789995
+sds|23|Other|Coastal|headache|1754744305351

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:controller="mediAid.controller.DiseaseHelpController"
+            xmlns:fx="http://javafx.com/fxml"
+            prefWidth="900" prefHeight="600"
+            minWidth="900" minHeight="600"
+            stylesheets="@../style/style.css"
+            style="-fx-background-color: linear-gradient(to bottom, #cfefff, #8fd0ff);">
+
+    <!-- TOP BAR -->
+    <top>
+        <HBox spacing="10" alignment="CENTER_LEFT" style="-fx-padding:10 12;">
+            <Button text="☰ Menu" onAction="#toggleMenu"/>
+            <Label text="🩺 Disease Help" style="-fx-font-weight:bold; -fx-font-size:16;"/>
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Button text="← Home" onAction="#goBack"/>
+            <Button text="🔔 Reminders" onAction="#goToReminder"/>
+        </HBox>
+    </top>
+
+    <!-- LEFT SIDE: scrollable menu (like Accident page) -->
+    <left>
+        <ScrollPane fx:id="sideScroll" hbarPolicy="NEVER" prefWidth="210">
+            <content>
+                <VBox fx:id="sideMenu" spacing="10" style="-fx-padding:10;">
+                    <Label text="MediAid Menu" style="-fx-font-weight:bold;"/>
+                    <Button text="🏠 Home"       onAction="#goToHome"/>
+                    <Button text="➕ Add Situation" onAction="#goToAddSituation"/>
+                    <Button text="💙 Volunteer"  onAction="#goToVolunteer"/>
+                    <Button text="🆘 Seek Help"  onAction="#goToSeekHelp"/>
+                    <Button text="ℹ About"      onAction="#goToAbout"/>
+                    <Button text="® Credits"    onAction="#goToCredits"/>
+                    <Button text="🔔 Reminders" onAction="#goToReminder"/>
+
+                    <Separator/>
+                    <Label text="Emergency Contacts" style="-fx-font-weight:bold;"/>
+
+                    <Label text="Distri.."/>
+                    <ComboBox fx:id="divisionBox"/>
+
+                    <Label text="Upazi.."/>
+                    <ComboBox fx:id="upazilaBox"/>
+
+                    <Label text="Service"/>
+                    <ComboBox fx:id="serviceBox"/>
+
+                    <Button text="Find Number" onAction="#findServiceNumber"/>
+                    <Label fx:id="serviceResult" wrapText="true"/>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </left>
+
+    <!-- CENTER: tiles, centered -->
+    <center>
+        <ScrollPane fitToWidth="true" fitToHeight="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED"
+                    style="-fx-background-color:transparent;">
+            <content>
+                <VBox alignment="CENTER" spacing="20" style="-fx-padding:10 0 30 0;">
+                    <GridPane hgap="28" vgap="28" alignment="CENTER">
+                        <!-- Row 1 -->
+                        <VBox alignment="CENTER" GridPane.rowIndex="0" GridPane.columnIndex="0" spacing="6">
+                            <ImageView fx:id="bodyache" fitWidth="110" fitHeight="110" pickOnBounds="true" onMouseClicked="#goToInput">
+                                <image><Image url="@/images/disease/bodyache.jpg"/></image>
+                            </ImageView>
+                            <Label text="Bodyache"/>
+                        </VBox>
+
+                        <VBox alignment="CENTER" GridPane.rowIndex="0" GridPane.columnIndex="1" spacing="6">
+                            <ImageView fx:id="cold" fitWidth="110" fitHeight="110" pickOnBounds="true" onMouseClicked="#goToInput">
+                                <image><Image url="@/images/disease/cold.jpg"/></image>
+                            </ImageView>
+                            <Label text="Cold"/>
+                        </VBox>
+
+                        <VBox alignment="CENTER" GridPane.rowIndex="0" GridPane.columnIndex="2" spacing="6">
+                            <ImageView fx:id="cough" fitWidth="110" fitHeight="110" pickOnBounds="true" onMouseClicked="#goToInput">
+                                <image><Image url="@/images/disease/cough.jpg"/></image>
+                            </ImageView>
+                            <Label text="Cough"/>
+                        </VBox>
+
+                        <VBox alignment="CENTER" GridPane.rowIndex="0" GridPane.columnIndex="3" spacing="6">
+                            <ImageView fx:id="diarrhoea" fitWidth="110" fitHeight="110" pickOnBounds="true" onMouseClicked="#goToInput">
+                                <image><Image url="@/images/disease/diarrhoea.jpg"/></image>
+                            </ImageView>
+                            <Label text="Diarrhoea"/>
+                        </VBox>
+
+                        <!-- Row 2 -->
+                        <VBox alignment="CENTER" GridPane.rowIndex="1" GridPane.columnIndex="0" spacing="6">
+                            <ImageView fx:id="fever" fitWidth="110" fitHeight="110" pickOnBounds="true" onMouseClicked="#goToInput">
+                                <image><Image url="@/images/disease/fever.jpg"/></image>
+                            </ImageView>
+                            <Label text="Fever"/>
+                        </VBox>
+
+                        <VBox alignment="CENTER" GridPane.rowIndex="1" GridPane.columnIndex="1" spacing="6">
+                            <ImageView fx:id="headache" fitWidth="110" fitHeight="110" pickOnBounds="true" onMouseClicked="#goToInput">
+                                <image><Image url="@/images/disease/headache.jpg"/></image>
+                            </ImageView>
+                            <Label text="Headache"/>
+                        </VBox>
+
+                        <VBox alignment="CENTER" GridPane.rowIndex="1" GridPane.columnIndex="2" spacing="6">
+                            <ImageView fx:id="nausea" fitWidth="110" fitHeight="110" pickOnBounds="true" onMouseClicked="#goToInput">
+                                <image><Image url="@/images/disease/nausea.jpg"/></image>
+                            </ImageView>
+                            <Label text="Nausea"/>
+                        </VBox>
+
+                        <VBox alignment="CENTER" GridPane.rowIndex="1" GridPane.columnIndex="3" spacing="6">
+                            <ImageView fx:id="stomachache" fitWidth="110" fitHeight="110" pickOnBounds="true" onMouseClicked="#goToInput">
+                                <image><Image url="@/images/disease/stomachache.jpg"/></image>
+                            </ImageView>
+                            <Label text="Stomachache"/>
+                        </VBox>
+
+                        <!-- Row 3 -->
+                        <VBox alignment="CENTER" GridPane.rowIndex="2" GridPane.columnIndex="1" spacing="6">
+                            <ImageView fx:id="vomiting" fitWidth="110" fitHeight="110" pickOnBounds="true" onMouseClicked="#goToInput">
+                                <image><Image url="@/images/disease/vomiting.jpg"/></image>
+                            </ImageView>
+                            <Label text="Vomiting"/>
+                        </VBox>
+                    </GridPane>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+
+    <!-- BOTTOM TIP -->
+    <bottom>
+        <HBox alignment="CENTER" style="-fx-padding:8;">
+            <Label text="Tip: use the side menu to find emergency phone numbers for your area."/>
+        </HBox>
+    </bottom>
+
+</BorderPane>

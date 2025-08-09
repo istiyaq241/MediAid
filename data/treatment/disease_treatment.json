@@ -1,0 +1,207 @@
+[
+  {
+    "name": "fever",
+    "ageGroups": ["0-12", "13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Coastal", "Forest", "Disaster Shelter"],
+    "minorSymptoms": ["headache", "bodyache", "cough", "cold", "nausea"],
+    "treatment": [
+      "• Check temperature every 6–8 hours; keep a simple log.",
+      "• 0–12 yrs: 0–12 yrs: prefer tepid sponging; use age‑appropriate paracetamol only if needed and not contraindicated.",
+      "• 13+ yrs: 13+ yrs: rest, light clothing, oral fluids; paracetamol if needed and not contraindicated.",
+      "• Encourage oral fluids; if dehydrated, sip ORS frequently.",
+      "• forest/rural: ensure safe drinking water; consider boiled or treated water.",
+      "• shelter/coastal: keep body cool, good airflow; avoid overcrowded, poorly ventilated corners.",
+      "• Avoid aspirin in children and adolescents."
+    ],
+    "warnings": [
+      "• Fever >39.5°C, persistent >3 days, or any fever in <3 months old—seek care.",
+      "• Stiff neck, confusion, seizure, severe dehydration, or rash—urgent evaluation.",
+      "• Repeated vomiting preventing fluids—seek medical help."
+    ],
+    "finalAdvice": [
+      "• Track times and doses of any medicine used.",
+      "• Return for care if fever pattern worsens or new localizing pain appears (ear, chest, urine).",
+      "• Maintain hand hygiene and safe water to reduce spread."
+    ]
+  },
+  {
+    "name": "cough",
+    "ageGroups": ["0-12", "13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Forest", "Coastal", "Disaster Shelter"],
+    "minorSymptoms": ["cold", "fever", "bodyache", "sore throat", "headache"],
+    "treatment": [
+      "• Warm fluids to soothe throat; honey only if ≥1 year old.",
+      "• Steam inhalation 1–2×/day if it helps breathing comfort.",
+      "• 0–12 yrs: avoid OTC cough suppressants unless advised by a clinician.",
+      "• 13+ yrs: consider warm saline gargles for sore throat.",
+      "• Avoid smoke exposure; sleep with head slightly elevated.",
+      "• shelter/coastal: mask if coughing in crowded areas to protect others."
+    ],
+    "warnings": [
+      "• Shortness of breath, blue lips, chest pain, coughing blood—urgent care.",
+      "• Cough >3 weeks or daily high fever—clinical evaluation."
+    ],
+    "finalAdvice": [
+      "• Rest, hydrate, and monitor fever.",
+      "• Practice cough etiquette and hand hygiene."
+    ]
+  },
+  {
+    "name": "cold",
+    "ageGroups": ["0-12", "13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Coastal", "Forest", "Disaster Shelter"],
+    "minorSymptoms": ["cough", "sore throat", "runny nose", "headache", "fever"],
+    "treatment": [
+      "• Identify common cold: runny/stuffy nose, sneezing, mild sore throat, mild cough.",
+      "• 0–12 yrs: avoid strong OTC cold meds; saline nose drops and plenty of fluids.",
+      "• 13+ yrs: steam inhalation 2–3×/day and warm saline gargles for comfort.",
+      "• Encourage warm fluids (soups, herbal teas) and rest.",
+      "• forest/rural: warm herbal teas with ginger/tulsi may help comfort.",
+      "• shelter/coastal: keep chest/neck warm during cold nights; ensure dry bedding."
+    ],
+    "warnings": [
+      "• High fever (>38.5°C), breathing difficulty, chest pain, or ear pain—seek care.",
+      "• Symptoms >10 days or worsening after initial improvement—consult a clinician."
+    ],
+    "finalAdvice": [
+      "• Most colds resolve in 7–10 days.",
+      "• Hydration, rest, and hand hygiene reduce spread."
+    ]
+  },
+  {
+    "name": "headache",
+    "ageGroups": ["13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Forest", "Disaster Shelter", "Coastal"],
+    "minorSymptoms": ["nausea", "vomiting", "fever", "cold"],
+    "treatment": [
+      "• Check hydration; encourage frequent sips of water.",
+      "• Rest in a dark, quiet room; reduce screen/bright light exposure.",
+      "• 13+ yrs: simple analgesic (paracetamol) if not contraindicated.",
+      "• Identify triggers: dehydration, heat, missed meals, poor sleep.",
+      "• shelter/coastal: ensure airflow and shade; cool compress on forehead."
+    ],
+    "warnings": [
+      "• Sudden ‘worst headache’, head injury, fever with neck stiffness—urgent care.",
+      "• Weakness, confusion, seizures, or repeated vomiting—emergency."
+    ],
+    "finalAdvice": [
+      "• Keep a log of triggers and relief methods.",
+      "• If recurrent/worsening, seek clinician review."
+    ]
+  },
+  {
+    "name": "stomachache",
+    "ageGroups": ["0-12", "13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Forest", "Coastal", "Disaster Shelter"],
+    "minorSymptoms": ["nausea", "vomiting", "diarrhoea", "fever", "gas"],
+    "treatment": [
+      "• Rest; small sips of water or ORS; avoid heavy/oily foods.",
+      "• 0–12 yrs: gentle abdomen warmth (cloth); avoid strong painkillers unless prescribed.",
+      "• 13+ yrs: simple analgesic (paracetamol) if not contraindicated.",
+      "• If gas/bloating suspected: encourage slow walking and warm fluids.",
+      "• forest/rural: ensure safe water; boil if unsure.",
+      "• shelter/coastal: use clean utensils; avoid street food during outbreaks."
+    ],
+    "warnings": [
+      "• Severe pain, rigid abdomen, blood in vomit/stool, persistent vomiting—urgent care.",
+      "• Right‑lower abdominal pain with fever—seek evaluation."
+    ],
+    "finalAdvice": [
+      "• Reintroduce bland foods gradually (rice, bananas, toast).",
+      "• Seek care if pain persists >24 hours or localizes sharply."
+    ]
+  },
+  {
+    "name": "bodyache",
+    "ageGroups": ["13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Forest", "Coastal", "Disaster Shelter"],
+    "minorSymptoms": ["fever", "cold", "cough", "fatigue", "headache"],
+    "treatment": [
+      "• Gentle stretching and warm compress to sore areas.",
+      "• Adequate rest; space out light activity to prevent stiffness.",
+      "• 13+ yrs: simple analgesic (paracetamol) if not contraindicated.",
+      "• Hydration and balanced light meals.",
+      "• shelter/coastal: ensure dry sleeping area; extra blanket in damp nights."
+    ],
+    "warnings": [
+      "• Severe weakness, dark urine, swelling, or pain after crush injury—seek urgent care.",
+      "• Persistent high fever with bodyache—medical review."
+    ],
+    "finalAdvice": [
+      "• Pace activities; resume gradually.",
+      "• If pain lasts >3–5 days or worsens, consult a clinician."
+    ]
+  },
+  {
+    "name": "diarrhoea",
+    "ageGroups": ["0-12", "13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Coastal", "Forest", "Disaster Shelter"],
+    "minorSymptoms": ["vomiting", "fever", "stomachache", "nausea", "thirst"],
+    "treatment": [
+      "• Start Oral Rehydration Solution (ORS) after each loose stool.",
+      "• 0–12 yrs: zinc supplementation as per local guidance; continue feeding.",
+      "• 13+ yrs: frequent ORS sips; avoid very oily/spicy food.",
+      "• forest/rural: use boiled/treated water for ORS and drinking.",
+      "• shelter/coastal: clean hands before food; separate drinking water from washing water."
+    ],
+    "warnings": [
+      "• Blood in stool, very little urine, sunken eyes, lethargy—urgent care.",
+      "• Severe or persistent vomiting preventing fluids—seek care."
+    ],
+    "finalAdvice": [
+      "• Maintain hygiene after toilet and before food.",
+      "• If symptoms persist >2 days or worsen, seek evaluation."
+    ]
+  },
+  {
+    "name": "nausea",
+    "ageGroups": ["0-12", "13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Coastal", "Forest", "Disaster Shelter"],
+    "minorSymptoms": ["vomiting", "stomachache", "fever", "diarrhoea", "headache"],
+    "treatment": [
+      "• Small, frequent sips of water; if tolerated, ORS.",
+      "• 0–12 yrs: avoid anti‑nausea meds unless prescribed; try cool clear fluids.",
+      "• 13+ yrs: ginger tea or plain crackers may help.",
+      "• Avoid strong smells and heavy meals; rest in upright position.",
+      "• shelter/coastal: ensure fresh airflow; avoid heat and crowding."
+    ],
+    "warnings": [
+      "• Persistent vomiting, dehydration signs, severe headache/neck stiffness—seek care.",
+      "• Vomiting blood or green (bile‑like) fluid—emergency care."
+    ],
+    "finalAdvice": [
+      "• Reintroduce bland foods slowly (rice, bananas).",
+      "• Seek care if unable to keep fluids down for 6–8 hours."
+    ]
+  },
+  {
+    "name": "vomiting",
+    "ageGroups": ["0-12", "13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Coastal", "Forest", "Disaster Shelter"],
+    "minorSymptoms": ["nausea", "stomachache", "diarrhoea", "fever", "dizziness"],
+    "treatment": [
+      "• Rest; no solid food during active vomiting; small ORS sips every 5–10 minutes.",
+      "• 0–12 yrs: avoid anti‑emetics unless advised; continue ORS; monitor urine output.",
+      "• 13+ yrs: after 4–6 hours without vomiting, start bland foods.",
+      "• forest/rural: use safe water only; boil if unsure.",
+      "• shelter/coastal: prevent crowding and heat; allow fresh air."
+    ],
+    "warnings": [
+      "• Vomiting blood, green (bile) fluid, severe abdominal pain, or head injury—emergency care.",
+      "• Inability to keep fluids down for >6–8 hours—urgent care."
+    ],
+    "finalAdvice": [
+      "• Gradually advance diet as tolerated.",
+      "• Seek evaluation if vomiting persists >24 hours or dehydration develops."
+    ]
+  }
+]

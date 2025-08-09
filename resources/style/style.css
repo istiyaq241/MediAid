@@ -1,0 +1,149 @@
+/* Background and font */
+.root {
+    -fx-background-color: linear-gradient(to bottom, #B2EBF2, #81D4FA, #4FC3F7); /* Tiffany to Air Force Blue */
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-text-fill: #ffffff;
+}
+
+.label {
+    -fx-text-fill: #0D47A1;
+    -fx-font-size: 16px;
+}
+
+.button {
+    -fx-background-color: #0288D1;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-padding: 6 12 6 12;
+    -fx-font-size: 14px;
+}
+
+.button:hover {
+    -fx-background-color: #039BE5;
+}
+
+.text-field, .text-area, .combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #4FC3F7;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 6;
+    -fx-text-fill: #000000;
+}
+
+.progress-bar {
+    -fx-accent: #E53935; /* Red light animation */
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-table-cell-border-color: #90CAF9;
+    -fx-border-color: #0288D1;
+    -fx-border-width: 2;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #0288D1;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-background-color: #0288D1;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.menu-toggle-button {
+    -fx-font-size: 16px;
+    -fx-background-color: #0077cc;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
+
+.big-button {
+    -fx-font-size: 18px;
+    -fx-padding: 15 30 15 30;
+    -fx-background-color: #0077cc;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+}
+.header {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0B5D8D;
+}
+
+.subheader {
+    -fx-font-size: 16px;
+    -fx-font-style: italic;
+    -fx-text-fill: #3A3A3A;
+}
+
+.welcome-title {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00838F;
+}
+
+.welcome-tip {
+    -fx-font-size: 16px;
+    -fx-fill: #444;
+}
+
+.section-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00796B;
+}
+
+.about-text {
+    -fx-font-size: 16px;
+    -fx-line-spacing: 5px;
+    -fx-text-fill: #333;
+}
+
+.treatment-textarea .content {
+    -fx-padding: 14 16 16 16;
+}
+.treatment-textarea {
+    -fx-font-size: 16px;
+    -fx-font-family: "Segoe UI", "Roboto", "Noto Sans", Arial;
+    -fx-control-inner-background: white;
+    -fx-text-fill: #0e2a47;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.04), 10, 0.1, 0, 2);
+}
+/* keep gradient background visible under any ScrollPane */
+.pane-transparent,
+.pane-transparent > .viewport {
+    -fx-background-color: transparent;
+}
+
+#treatmentTextArea {
+    -fx-font-family: "Arial Black";
+    -fx-font-size: 15px;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.app-title { -fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #0a5aa3; }
+
+.cta-btn {
+    -fx-background-color: linear-gradient(to bottom, #0a7bd1, #0867b3);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-background-radius: 16;
+    -fx-padding: 10 20;
+}
+
+.cta-btn:hover { -fx-opacity: 0.9; }
+
+.pill-btn, .pill-btn-small, .icon-btn {
+    -fx-background-color: #0a7bd1;
+    -fx-text-fill: white;
+    -fx-background-radius: 18;
+}
+.pill-btn { -fx-padding: 8 14; }
+.pill-btn-small { -fx-padding: 6 10; -fx-font-size: 12px; }
+.icon-btn { -fx-padding: 2 8; -fx-font-size: 12px; }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="mediAid.controller.CreditsController"
+            xmlns:fx="http://javafx.com/fxml"
+            prefWidth="900" prefHeight="600"
+            stylesheets="@../style/style.css">
+
+    <VBox fx:id="fadeContainer"
+          spacing="20"
+          alignment="TOP_CENTER"
+          opacity="0"
+          AnchorPane.topAnchor="20"
+          AnchorPane.leftAnchor="20"
+          AnchorPane.rightAnchor="20"
+          AnchorPane.bottomAnchor="20">
+
+        <Label text="Credits" styleClass="section-title"/>
+
+        <TextArea fx:id="creditsText"
+                  wrapText="true"
+                  editable="false"
+                  prefWidth="800"
+                  prefHeight="500"
+                  styleClass="about-text"/>
+
+        <fx:include source="components/GlobalNav.fxml"/>
+    </VBox>
+</AnchorPane>

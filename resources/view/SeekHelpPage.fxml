@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="mediAid.controller.SeekHelpController"
+            xmlns:fx="http://javafx.com/fxml"
+            prefWidth="900" prefHeight="600"
+            minWidth="900" minHeight="600"
+            stylesheets="@../style/style.css">
+
+    <VBox spacing="15" alignment="CENTER" layoutX="50" layoutY="50" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.bottomAnchor="20">
+        <Label text="Available Volunteers" styleClass="section-title"/>
+
+        <TableView fx:id="volunteerTable" prefHeight="500" prefWidth="800">
+            <columns>
+                <TableColumn fx:id="nameCol" text="Name" prefWidth="120"/>
+                <TableColumn fx:id="ageCol" text="Age" prefWidth="60"/>
+                <TableColumn fx:id="genderCol" text="Gender" prefWidth="80"/>
+                <TableColumn fx:id="bloodCol" text="Blood" prefWidth="80"/>
+                <TableColumn fx:id="professionCol" text="Profession" prefWidth="150"/>
+                <TableColumn fx:id="locationCol" text="Location" prefWidth="150"/>
+            </columns>
+        </TableView>
+
+        <fx:include source="components/GlobalNav.fxml"/>
+    </VBox>
+</AnchorPane>

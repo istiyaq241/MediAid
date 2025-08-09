@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="mediAid.controller.ReminderPageController"
+            xmlns:fx="http://javafx.com/fxml"
+            prefWidth="900" prefHeight="600"
+            minWidth="900" minHeight="600"
+            maxWidth="Infinity" maxHeight="Infinity"
+            stylesheets="@../style/style.css">
+    <VBox layoutX="50" layoutY="50" spacing="10" alignment="CENTER">
+        <TableView fx:id="reminderTable" prefHeight="400" prefWidth="700">
+            <columns>
+                <TableColumn fx:id="nameCol" text="Name" prefWidth="100"/>
+                <TableColumn fx:id="ageCol" text="Age" prefWidth="100"/>
+                <TableColumn fx:id="genderCol" text="Gender" prefWidth="100"/>
+                <TableColumn fx:id="diseaseCol" text="Disease" prefWidth="150"/>
+                <TableColumn fx:id="timeCol" text="Time Remaining" prefWidth="250"/>
+            </columns>
+        </TableView>
+        <fx:include source="components/GlobalNav.fxml"/>
+    </VBox>
+</AnchorPane>

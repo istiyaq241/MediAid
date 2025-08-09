@@ -4,7 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="666b2e18-ab78-4c6f-adcd-eedb930db5ac" name="Changes" comment="" />
+    <list default="true" id="666b2e18-ab78-4c6f-adcd-eedb930db5ac" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/MediAid.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/JavaFX.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MediAid1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reminders.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shown_reminders.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/diseases/bodyache.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/diseases/cold.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/diseases/cough.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/diseases/diarrhoea.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/diseases/fever.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/diseases/headache.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/diseases/nausea.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/diseases/stomachache.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/diseases/vomiting.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/json/treatments.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AboutPageController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/CreditsPageController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/DisclaimerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/DiseaseHandlerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/DiseaseInputController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/HomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ReminderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/SelectionPageController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/SplashScreenController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/TreatmentDisplayController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ConditionAdvisor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ReminderManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ReminderRow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ReminderScheduler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ReminderTicker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Treatment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/TreatmentLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/AboutPage.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/CreditsPage.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Disclaimer.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/DiseaseHandler.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/DiseaseInput.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/HomePage.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Reminder.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/SelectionPage.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/SplashScreen.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/TreatmentDisplay.fxml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,12 +74,12 @@
     &quot;assignee&quot;: &quot;istiyaq241&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/istiyaq241/MediAid.git&quot;,
-    &quot;accountId&quot;: &quot;62007c2f-c3ff-40d0-9f52-aeefa15c08bc&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/istiyaq241/MediAid",
+    "accountId": "62007c2f-c3ff-40d0-9f52-aeefa15c08bc"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -41,36 +88,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.Run.executor": "Run",
+    "Application.Unnamed.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/User/Desktop/NF3/MediAid",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="MediAid1" />
-      <option name="VM_PARAMETERS" value="--module-path lib --add-modules javafx.controls,javafx.fxml -Dprism.order=sw -Djava.library.path=lib/bin " />
+    <configuration name="Run" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="MAIN_CLASS_NAME" value="mediAid.Main" />
+      <module name="MediAid" />
+      <option name="VM_PARAMETERS" value="--module-path lib --add-modules javafx.controls,javafx.fxml -Dprism.order=sw -Djava.library.path=lib/bin" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="MediAid1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="MediAid1" />
+      <option name="filePath" />
+      <method v="2" />
     </configuration>
   </component>
   <component name="SharedIndexes">
@@ -91,6 +153,7 @@
       <workItem from="1754418965109" duration="139000" />
       <workItem from="1754419107848" duration="10635000" />
       <workItem from="1754430672889" duration="16000" />
+      <workItem from="1754743925656" duration="395000" />
     </task>
     <servers />
   </component>

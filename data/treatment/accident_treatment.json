@@ -1,0 +1,264 @@
+[
+  {
+    "name": "choking",
+    "ageGroups": ["0-12", "13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Coastal", "Forest", "Disaster Shelter"],
+    "minorSymptoms": [],
+    "treatment": [
+      "• Confirm choking: cannot speak, weak or no cough, high-pitched or silent breathing.",
+      "• 13+ yrs: give 5 back blows then 5 abdominal thrusts; repeat cycles; call emergency services.",
+      "• 0–12 yrs: give back blows and chest thrusts; do not perform adult abdominal thrusts on infants.",
+      "• If unconscious: start CPR; after 30 compressions, look for object and remove if visible.",
+      "• shelter/coastal: assign a caller and a helper; keep airway attempts continuous until help arrives."
+    ],
+    "warnings": [
+      "• Do not blind finger sweep.",
+      "• If breathing stops or becomes blue, begin CPR and seek urgent medical help."
+    ],
+    "finalAdvice": [
+      "• After relief, seek medical check for airway injury.",
+      "• Teach family basic choking first aid."
+    ]
+  },
+  {
+    "name": "cpr",
+    "ageGroups": ["0-12", "13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Coastal", "Forest", "Disaster Shelter"],
+    "minorSymptoms": [],
+    "treatment": [
+      "• Check responsiveness and breathing; call emergency services immediately.",
+      "• 13+ yrs: 30 chest compressions then 2 breaths; rate 100–120/min; depth ~5–6 cm.",
+      "• 0–12 yrs: compress a third of chest depth; single rescuer 30:2, two rescuers 15:2.",
+      "• Use AED as soon as available; follow prompts.",
+      "• shelter/coastal: rotate rescuers every 2 minutes if available."
+    ],
+    "warnings": [
+      "• Do not delay compressions; minimize interruptions.",
+      "• If trauma suspected, be careful with head tilt; use jaw thrust if trained."
+    ],
+    "finalAdvice": [
+      "• Continue CPR until professional help takes over or the person shows signs of life.",
+      "• Arrange CPR training for community volunteers."
+    ]
+  },
+  {
+    "name": "seizure",
+    "ageGroups": ["0-12", "13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Coastal", "Forest", "Disaster Shelter"],
+    "minorSymptoms": [],
+    "treatment": [
+      "• Time the seizure; clear area of hazards; cushion head.",
+      "• Do not restrain movements; do not place anything in the mouth.",
+      "• After convulsions stop, place in recovery position; check breathing.",
+      "• If seizure >5 minutes, repeated seizures, injury, or first-time event: urgent care.",
+      "• forest/rural: ensure warmth and protection from insects while recovering."
+    ],
+    "warnings": [
+      "• Head injury, pregnancy, diabetes, or water-related seizure—seek urgent evaluation.",
+      "• Persistent confusion or breathing trouble—emergency care."
+    ],
+    "finalAdvice": [
+      "• Note triggers and duration for clinician.",
+      "• Ensure medicines, sleep, and hydration are maintained."
+    ]
+  },
+
+  {
+    "name": "burn - 1st degree",
+    "ageGroups": ["0-12", "13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Coastal", "Forest", "Disaster Shelter"],
+    "minorSymptoms": [],
+    "treatment": [
+      "• Cool the burn with cool running water for 20 minutes; do not use ice.",
+      "• Remove tight items near the area before swelling starts.",
+      "• Cover with clean non-adhesive dressing or cling film.",
+      "• 0–12 yrs: avoid topical anesthetics unless advised.",
+      "• shelter/coastal: keep area clean and dry; avoid sand contamination."
+    ],
+    "warnings": [
+      "• Face, hands, genitals, or large area burns—seek medical care.",
+      "• Blistering or increasing pain/redness—evaluation needed."
+    ],
+    "finalAdvice": [
+      "• Pain control with paracetamol if not contraindicated.",
+      "• Check tetanus status when possible."
+    ]
+  },
+  {
+    "name": "burn - 2nd degree",
+    "ageGroups": ["0-12", "13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Coastal", "Forest", "Disaster Shelter"],
+    "minorSymptoms": [],
+    "treatment": [
+      "• Cool with running water 20 minutes; do not break blisters.",
+      "• Gently remove jewelry or tight clothing around burn.",
+      "• Cover with sterile non-stick dressing; avoid ointments initially.",
+      "• Provide pain relief if not contraindicated; give fluids.",
+      "• forest/rural: protect from dust and insects; keep dressing dry."
+    ],
+    "warnings": [
+      "• Large or deep burns, circumferential burns, or inhalation injury—urgent transfer.",
+      "• Signs of infection (increasing pain, pus, fever)—seek care."
+    ],
+    "finalAdvice": [
+      "• Elevate affected limb to reduce swelling.",
+      "• Follow-up for wound assessment and dressing changes."
+    ]
+  },
+  {
+    "name": "burn - 3rd degree",
+    "ageGroups": ["0-12", "13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Coastal", "Forest", "Disaster Shelter"],
+    "minorSymptoms": [],
+    "treatment": [
+      "• Do not cool extensively; cover with sterile dry dressing.",
+      "• Treat for shock: keep warm, lie flat if no breathing issues; do not give food or drink if unconscious.",
+      "• Urgent transfer to hospital.",
+      "• shelter/coastal: prepare clear path and helpers for transport."
+    ],
+    "warnings": [
+      "• Blackened/charred skin or white leathery areas—emergency care.",
+      "• Airway burns suspected (soot around mouth, hoarseness)—urgent evacuation."
+    ],
+    "finalAdvice": [
+      "• Monitor breathing and consciousness.",
+      "• Keep victim warm and reassured."
+    ]
+  },
+
+  {
+    "name": "bleeding - mild",
+    "ageGroups": ["0-12", "13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Coastal", "Forest", "Disaster Shelter"],
+    "minorSymptoms": [],
+    "treatment": [
+      "• Apply direct pressure with clean cloth for 10 minutes without checking.",
+      "• Clean around wound with clean water; do not remove large embedded objects.",
+      "• Elevate limb if possible; apply clean dressing.",
+      "• shelter/coastal: avoid sand contamination; use clean plastic wrap if no dressing."
+    ],
+    "warnings": [
+      "• Signs of infection or persistent oozing—seek care.",
+      "• Deep or dirty wounds may need tetanus shot and medical cleaning."
+    ],
+    "finalAdvice": [
+      "• Keep dressing dry and clean; change if soaked.",
+      "• Watch for swelling, redness, fever."
+    ]
+  },
+  {
+    "name": "bleeding - moderate",
+    "ageGroups": ["0-12", "13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Coastal", "Forest", "Disaster Shelter"],
+    "minorSymptoms": [],
+    "treatment": [
+      "• Apply firm direct pressure; add more cloths on top if soaking.",
+      "• Elevate limb; maintain pressure until bleeding slows markedly.",
+      "• Apply pressure bandage; immobilize injured part.",
+      "• forest/rural: improvise with clean cloth; prioritize transport planning."
+    ],
+    "warnings": [
+      "• Dizziness, pallor, rapid breathing, or soaking dressings—urgent care.",
+      "• Large or gaping wounds require medical attention."
+    ],
+    "finalAdvice": [
+      "• Keep victim warm and lying down.",
+      "• Arrange transport to medical facility."
+    ]
+  },
+  {
+    "name": "bleeding - severe",
+    "ageGroups": ["0-12", "13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Coastal", "Forest", "Disaster Shelter"],
+    "minorSymptoms": [],
+    "treatment": [
+      "• Call emergency services immediately.",
+      "• Apply strong direct pressure; use tourniquet for life‑threatening limb bleeding if trained.",
+      "• Do not remove deeply embedded objects; pad around them.",
+      "• Treat for shock; keep warm; rapid evacuation.",
+      "• shelter/coastal: clear route and helpers for immediate transport."
+    ],
+    "warnings": [
+      "• Fainting, confusion, cold clammy skin—signs of shock—emergency.",
+      "• Uncontrolled bleeding despite pressure—tourniquet if trained; urgent transfer."
+    ],
+    "finalAdvice": [
+      "• Continue monitoring until handover to medical team.",
+      "• Record timing of tourniquet if used."
+    ]
+  },
+
+  {
+    "name": "snakebite - venomous",
+    "ageGroups": ["0-12", "13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Coastal", "Forest", "Disaster Shelter"],
+    "minorSymptoms": [],
+    "treatment": [
+      "• Keep victim calm and still; immobilize bitten limb with a splint.",
+      "• Remove rings or tight items; keep limb at heart level.",
+      "• Do not cut, suck, or apply ice.",
+      "• Rapid transport to hospital for antivenom assessment.",
+      "• forest/rural: minimize walking; arrange stretcher or vehicle quickly."
+    ],
+    "warnings": [
+      "• Worsening swelling, breathing difficulty, bleeding gums—emergency.",
+      "• Any systemic symptoms—urgent evacuation."
+    ],
+    "finalAdvice": [
+      "• Note time of bite, snake appearance if safely possible.",
+      "• Keep victim warm and reassured during transport."
+    ]
+  },
+  {
+    "name": "snakebite - non-venomous",
+    "ageGroups": ["0-12", "13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Coastal", "Forest", "Disaster Shelter"],
+    "minorSymptoms": [],
+    "treatment": [
+      "• Wash gently with clean water; control minor bleeding with pressure.",
+      "• Elevate limb and rest; cover with clean dressing.",
+      "• Observe for swelling or signs of infection.",
+      "• shelter/coastal: avoid contamination; keep dressing dry."
+    ],
+    "warnings": [
+      "• Increasing redness, pain, or fever—seek care.",
+      "• Deep puncture wounds may need tetanus shot and antibiotics."
+    ],
+    "finalAdvice": [
+      "• Monitor for 24–48 hours.",
+      "• Seek care if symptoms worsen."
+    ]
+  },
+  {
+    "name": "snakebite - unknown",
+    "ageGroups": ["0-12", "13+"],
+    "genders": ["Male", "Female", "Other"],
+    "locations": ["Rural", "Urban", "Coastal", "Forest", "Disaster Shelter"],
+    "minorSymptoms": [],
+    "treatment": [
+      "• Treat as potentially venomous: immobilize limb, minimize movement.",
+      "• Remove tight items; keep limb at heart level.",
+      "• Arrange urgent transfer to hospital.",
+      "• forest/rural: coordinate rapid transport; avoid long walks."
+    ],
+    "warnings": [
+      "• Spreading swelling, drowsiness, bleeding—emergency.",
+      "• Any breathing difficulty—urgent evacuation."
+    ],
+    "finalAdvice": [
+      "• Note time and site of bite.",
+      "• Keep victim calm; reassess regularly."
+    ]
+  }
+]

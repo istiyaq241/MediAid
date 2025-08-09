@@ -1,0 +1,95 @@
+District: Dhaka
+  Upazila: Mirpur
+    Fire Service: 02-9001055 / 01556-300117
+    Ambulance: Red Crescent - 9330188–89
+    Medical: BSMMU - 8614001–5
+  Upazila: Mohammadpur
+    Fire Service: 02-9112078 / 01712-970093
+    Ambulance: Al-Markazul Islami - 9127867, 8114980
+    Medical: Dhaka Medical College - 8626812
+  Upazila: Dhanmondi
+    Fire Service: 02-8619981 / 01715-131725
+    Ambulance: Anjuman - 9336611
+    Medical: Labaid Hospital - 9676356
+  Upazila: Tejgaon
+    Fire Service: 02-9122560 / 01730-337101
+    Ambulance: 24 Ambulance - 01911-125156
+    Medical: Central Hospital - 9660015
+
+District: Chattogram
+  Upazila: Agrabad
+    Fire Service: 031-711333 / 01730-337101
+    Ambulance: Red Crescent - 031-611743
+    Medical: Chattogram Medical College - 031-619748
+  Upazila: Kotwali
+    Fire Service: 031-613901 / 01730-337102
+    Ambulance: Anjuman - 031-611933
+    Medical: General Hospital - 031-611900
+  Upazila: Pahartali
+    Fire Service: 031-653535 / 01730-337107
+    Ambulance: Red Crescent - 031-652222
+    Medical: Pahartali Health Center - 031-656565
+
+District: Sylhet
+  Upazila: Sylhet Sadar
+    Fire Service: 0821-716162 / 01730-337103
+    Ambulance: Red Crescent - 0821-716404
+    Medical: MAG Osmani Medical College - 0821-713667
+  Upazila: Beanibazar
+    Fire Service: 08223-56222 / 01730-337104
+    Ambulance: Beanibazar Ambulance - 08223-56011
+    Medical: Beanibazar Hospital - 08223-56210
+  Upazila: Golapganj
+    Fire Service: 08227-75000 / 01730-337108
+    Ambulance: Golapganj Ambulance - 08227-75200
+    Medical: Golapganj Health Complex - 08227-75300
+
+District: Rajshahi
+  Upazila: Rajshahi Sadar
+    Fire Service: 0721-772300 / 01730-337200
+    Ambulance: Local Service - 0721-772100
+    Medical: Rajshahi Medical College - 0721-770123
+  Upazila: Paba
+    Fire Service: 0721-775500 / 01730-337201
+    Ambulance: Local Ambulance - 0721-775700
+    Medical: Paba Health Complex - 0721-775600
+
+District: Khulna
+  Upazila: Khulna Sadar
+    Fire Service: 041-720555 / 01730-337205
+    Ambulance: Red Crescent - 041-730123
+    Medical: Khulna Medical College - 041-731234
+  Upazila: Batiaghata
+    Fire Service: 041-762222 / 01730-337215
+    Ambulance: Batiaghata Ambulance - 041-763333
+    Medical: Batiaghata Health Complex - 041-764444
+
+District: Barisal
+  Upazila: Barisal Sadar
+    Fire Service: 0431-61444 / 01730-337206
+    Ambulance: Red Crescent - 0431-62000
+    Medical: Sher-e-Bangla Medical College - 0431-61212
+  Upazila: Mehendiganj
+    Fire Service: 04327-51234 / 01730-337216
+    Ambulance: Mehendiganj Ambulance - 04327-52222
+    Medical: Mehendiganj Health Complex - 04327-53333
+
+District: Mymensingh
+  Upazila: Mymensingh Sadar
+    Fire Service: 091-62000 / 01730-337207
+    Ambulance: Anjuman - 091-63000
+    Medical: Mymensingh Medical College - 091-63024
+  Upazila: Gouripur
+    Fire Service: 09127-44444 / 01730-337217
+    Ambulance: Gouripur Ambulance - 09127-45555
+    Medical: Gouripur Health Complex - 09127-46666
+
+District: Rangpur
+  Upazila: Rangpur Sadar
+    Fire Service: 0521-62888 / 01730-337208
+    Ambulance: Red Crescent - 0521-61010
+    Medical: Rangpur Medical College - 0521-61020
+  Upazila: Mithapukur
+    Fire Service: 05225-44555 / 01730-337218
+    Ambulance: Mithapukur Ambulance - 05225-45666
+    Medical: Mithapukur Hospital - 05225-45777

@@ -1,0 +1,12 @@
+MediAid is an emergency-focused health assistant designed to provide immediate first-aid guidance in regions where access to medical professionals is delayed or unavailable.
+
+The app includes guidance for both accident-related emergencies and common disease symptoms.
+
+Key features:
+• Visual symptom selection for low-literacy users
+• Emergency-safe treatment suggestions
+• 3-day reminder system
+• Local volunteer integration
+• No internet dependency
+
+Our mission is to save lives by bridging the gap between injury and actual medical help in crisis scenarios.

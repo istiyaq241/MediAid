@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+
+<!-- Minimal global nav: only a Back button -->
+<HBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="mediAid.controller.GlobalNavController"
+      alignment="CENTER_RIGHT" spacing="10">
+    <Button text="← Back" onAction="#goBack"/>
+</HBox>

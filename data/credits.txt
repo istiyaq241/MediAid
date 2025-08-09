@@ -1,0 +1,19 @@
+Credits
+
+1. Rakib (134) – Symptom Input & Dropdown Logic  
+Rakib was responsible for designing and implementing the logic behind user symptom selection. He created the input interface and developed the dropdown system that makes symptom reporting easy and intuitive for users.
+
+2. Reduwan (697) – Medicine Suggestion Logic  
+Reduwan handled the core logic that powers the emergency-safe medicine suggestions. He worked on mapping symptoms to temporary treatments and ensured that all recommendations are safe, context-aware, and suitable for disaster scenarios.
+
+3. Shaom (810) – Reminder Timer Implementation  
+Shaom implemented the 3-day reminder timer system which tracks emergency treatments for individuals and notifies users before escalation. This system is essential for follow-ups and user safety.
+
+4. Moyen (675) – File Handling (optional)  
+Moyen contributed to reading and writing logic for the app’s internal data files. He helped structure how volunteers, reminders, and treatments are stored and retrieved using `.txt` and `.json` formats.
+
+5. Istiyaq (020) – GUI Design (JavaFX)  
+Istiyaq led the complete redesign of the application's user interface using JavaFX. He ensured a clean, visually accessible, and responsive layout, including the implementation of image-based selection for low-literacy users.
+
+6. All Members – Collaborative Documentation & Reports  
+Every member contributed equally to preparing the final project documentation, technical reports, and presentations. The writing process was shared, and the final output reflects collective teamwork and dedication.
