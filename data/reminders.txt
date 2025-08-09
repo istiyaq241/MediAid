@@ -85,4 +85,7 @@ ghg|45|Male|Urban|snakebite - venomous|1754738085395
 sd|23|Female|Urban|bodyache|1754738223355
 xgdf|34|Female|Urban|snakebite - non-venomous|1754740268587
 dsds|23|Female|Urban|snakebite - non-venomous|1754743789995
-sds|23|Other|Coastal|headache|1754744305351
+fdfdf|23|Female|Forest|bodyache|1754757779973
+sdsd|23|Female|Urban|snakebite - non-venomous|1754758979908
+dfd|23|Male|Urban|snakebite - venomous|1754759008364
+fgfg|34|Other|Rural|cold|1754761139299

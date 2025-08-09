@@ -27,31 +27,38 @@
 
     <!-- LEFT SIDE: scrollable menu (like Accident page) -->
     <left>
-        <ScrollPane fx:id="sideScroll" hbarPolicy="NEVER" prefWidth="210">
+        <ScrollPane fx:id="sideScroll" styleClass="pane-transparent" fitToWidth="true" prefWidth="220"
+                    hbarPolicy="NEVER" vbarPolicy="AS_NEEDED">
             <content>
-                <VBox fx:id="sideMenu" spacing="10" style="-fx-padding:10;">
-                    <Label text="MediAid Menu" style="-fx-font-weight:bold;"/>
-                    <Button text="🏠 Home"       onAction="#goToHome"/>
-                    <Button text="➕ Add Situation" onAction="#goToAddSituation"/>
-                    <Button text="💙 Volunteer"  onAction="#goToVolunteer"/>
-                    <Button text="🆘 Seek Help"  onAction="#goToSeekHelp"/>
-                    <Button text="ℹ About"      onAction="#goToAbout"/>
-                    <Button text="® Credits"    onAction="#goToCredits"/>
-                    <Button text="🔔 Reminders" onAction="#goToReminder"/>
+                <VBox fx:id="sideMenu" spacing="8" prefWidth="220">
+                    <padding><Insets top="12" right="12" bottom="12" left="12"/></padding>
+
+                    <!-- Quick Nav -->
+                    <Label text="Quick Navigation" style="-fx-font-weight:bold;"/>
+                    <Button text="🏠 Home" onAction="#goToHome" maxWidth="Infinity"/>
+                    <Button text="📝 Add Situation" onAction="#goToAddSituation" maxWidth="Infinity"/>
+                    <Button text="🤝 Volunteer" onAction="#goToVolunteer" maxWidth="Infinity"/>
+                    <Button text="🆘 Seek Help" onAction="#goToSeekHelp" maxWidth="Infinity"/>
+                    <Button text="ℹ About" onAction="#goToAbout" maxWidth="Infinity"/>
+                    <Button text="🎖 Credits" onAction="#goToCredits" maxWidth="Infinity"/>
+                    <Button text="⏰ Reminders" onAction="#goToReminder" maxWidth="Infinity"/>
 
                     <Separator/>
+
+                    <!-- Service Directory -->
                     <Label text="Emergency Contacts" style="-fx-font-weight:bold;"/>
+                    <GridPane hgap="8" vgap="8">
+                        <Label text="District:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                        <ComboBox fx:id="divisionBox" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="140"/>
 
-                    <Label text="Distri.."/>
-                    <ComboBox fx:id="divisionBox"/>
+                        <Label text="Upazila:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                        <ComboBox fx:id="upazilaBox" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
 
-                    <Label text="Upazi.."/>
-                    <ComboBox fx:id="upazilaBox"/>
+                        <Label text="Service:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                        <ComboBox fx:id="serviceBox" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                    </GridPane>
 
-                    <Label text="Service"/>
-                    <ComboBox fx:id="serviceBox"/>
-
-                    <Button text="Find Number" onAction="#findServiceNumber"/>
+                    <Button text="Find Number" onAction="#findServiceNumber" maxWidth="Infinity"/>
                     <Label fx:id="serviceResult" wrapText="true"/>
                 </VBox>
             </content>
@@ -60,8 +67,8 @@
 
     <!-- CENTER: tiles, centered -->
     <center>
-        <ScrollPane fitToWidth="true" fitToHeight="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED"
-                    style="-fx-background-color:transparent;">
+        <ScrollPane styleClass="pane-transparent" fitToWidth="true" prefWidth="220"
+                    hbarPolicy="NEVER" vbarPolicy="AS_NEEDED">
             <content>
                 <VBox alignment="CENTER" spacing="20" style="-fx-padding:10 0 30 0;">
                     <GridPane hgap="28" vgap="28" alignment="CENTER">

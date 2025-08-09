@@ -1,54 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
 
 <BorderPane xmlns:fx="http://javafx.com/fxml"
             fx:controller="mediAid.controller.HomePageController"
-            prefWidth="1100" prefHeight="680"
-            style="-fx-background-color: linear-gradient(to bottom, #c7eef7, #4db6f4);">
+            prefWidth="900" prefHeight="600"
+            minWidth="900" minHeight="600"
+            stylesheets="@../style/style.css">
 
-    <!-- Top bar: disclaimer + Reminders button (snapshot 2 look) -->
     <top>
-        <BorderPane>
-            <left>
-                <HBox alignment="CENTER_LEFT" spacing="8" style="-fx-padding: 8 12 0 12;">
-                    <!-- (Optional) menu icon was decorative in snapshot 2; removed action to avoid errors -->
-                    <Button text="☰" disable="true" />
-                    <Label text="This is not a substitute for professional medical advice."
-                           style="-fx-text-fill: #c62828; -fx-font-size: 14px; -fx-font-weight: bold;"/>
-                </HBox>
-            </left>
-            <right>
-                <HBox alignment="CENTER_RIGHT" spacing="8" style="-fx-padding: 8 12 0 12;">
-                    <Button text="🔔 Reminders" onAction="#goToReminder"/>
-                </HBox>
-            </right>
-        </BorderPane>
+        <HBox spacing="12" alignment="CENTER_LEFT">
+            <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+            <Button text="☰ Menu" onAction="#toggleMenu"/>
+            <Label text="Home Page" style="-fx-font-size:18px; -fx-font-weight:bold;"/>
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Button text="🔔 Reminders" onAction="#goToReminder"/>
+        </HBox>
     </top>
 
-    <!-- Center: two large buttons -->
+
+    <left>
+        <ScrollPane fx:id="sideScroll" styleClass="pane-transparent" fitToWidth="true" prefWidth="260"
+                    hbarPolicy="NEVER" vbarPolicy="AS_NEEDED" visible="false" managed="false">
+            <content>
+                <VBox fx:id="sideMenu" spacing="8" prefWidth="220">
+                    <padding><Insets top="12" right="12" bottom="12" left="12"/></padding>
+
+                    <Label text="Quick Navigation" style="-fx-font-weight:bold;"/>
+                    <Button text="🏠 Home" onAction="#goToHome" maxWidth="Infinity"/>
+                    <Button text="📝 Add Situation" onAction="#goToAddSituation" maxWidth="Infinity"/>
+                    <Button text="🤝 Volunteer" onAction="#goToVolunteer" maxWidth="Infinity"/>
+                    <Button text="🆘 Seek Help" onAction="#goToSeekHelp" maxWidth="Infinity"/>
+                    <Button text="ℹ About" onAction="#goToAbout" maxWidth="Infinity"/>
+                    <Button text="🎖 Credits" onAction="#goToCredits" maxWidth="Infinity"/>
+                    <Button text="⏰ Reminders" onAction="#goToReminder" maxWidth="Infinity"/>
+
+                    <Separator/>
+
+                    <Label text="Emergency Contacts" style="-fx-font-weight:bold;"/>
+                    <GridPane hgap="8" vgap="8">
+                        <columnConstraints>
+                            <ColumnConstraints halignment="RIGHT" minWidth="80" prefWidth="100"/>
+                            <ColumnConstraints hgrow="ALWAYS" minWidth="120" prefWidth="150"/>
+                        </columnConstraints>
+
+                        <Label text="District:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                        <ComboBox fx:id="divisionBox" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="160"/>
+
+                        <Label text="Upazila:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                        <ComboBox fx:id="upazilaBox" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="160"/>
+
+                        <Label text="Service:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                        <ComboBox fx:id="serviceBox" GridPane.rowIndex="2" GridPane.columnIndex="1" prefWidth="160"/>
+                    </GridPane>
+
+                    <Button text="Find Number" onAction="#findServiceNumber" maxWidth="Infinity"/>
+                    <Label fx:id="serviceResult" wrapText="true"/>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </left>
+
+
+
     <center>
-        <VBox alignment="CENTER" spacing="24">
-            <HBox alignment="CENTER" spacing="28">
+        <VBox alignment="CENTER" spacing="28">
+            <HBox alignment="CENTER" spacing="40">
                 <Button text="🆘 Accident Help"
-                        onAction="#goToAccident"
-                        minWidth="220" minHeight="56"
-                        style="-fx-background-color:#0d6efd; -fx-text-fill:white; -fx-background-radius:12;"/>
+                        minWidth="240" minHeight="60"
+                        style="-fx-font-size: 16px; -fx-font-weight: bold;"
+                        onAction="#goToAccident"/>
                 <Button text="🩺 Disease Help"
-                        onAction="#goToDisease"
-                        minWidth="220" minHeight="56"
-                        style="-fx-background-color:#0d6efd; -fx-text-fill:white; -fx-background-radius:12;"/>
+                        minWidth="240" minHeight="60"
+                        style="-fx-font-size: 16px; -fx-font-weight: bold;"
+                        onAction="#goToDisease"/>
             </HBox>
         </VBox>
     </center>
-
-    <!-- (Optional) light watermark background you had before -->
-    <bottom>
-        <HBox alignment="CENTER">
-            <Label text="" />
-        </HBox>
-    </bottom>
 </BorderPane>

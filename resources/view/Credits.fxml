@@ -27,6 +27,6 @@
                   prefHeight="500"
                   styleClass="about-text"/>
 
-        <fx:include source="components/GlobalNav.fxml"/>
+        <fx:include source="/view/components/BackBar.fxml"/>
     </VBox>
 </AnchorPane>

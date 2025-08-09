@@ -93,22 +93,7 @@ public class AccidentHelpController {
         }
     }
 
-    /* ---------------------- Navigation / actions ---------------------- */
 
-    @FXML
-    public void goToInput(MouseEvent event) {
-        ImageView clicked = (ImageView) event.getSource();
-        String condition = clicked.getId(); // fx:id of the image: choking, bleeding, etc.
-        TreatmentContext.setContext("accident", condition);
-
-        Main.setPreviousScene("/view/AccidentHelp.fxml");
-        // keep your existing behavior (only some go to the detail screen)
-        if (condition.equals("burn") || condition.equals("bleeding") || condition.equals("snakebite")) {
-            Main.changeScene("/view/AccidentInput.fxml");
-        } else {
-            Main.changeScene("/view/TreatmentPage.fxml");
-        }
-    }
 
     @FXML
     public void toggleMenu() {
@@ -119,14 +104,7 @@ public class AccidentHelpController {
         }
     }
 
-    @FXML public void goBack()           { Main.changeScene("/view/HomePage.fxml"); }
-    @FXML public void goToReminder()     { Main.setPreviousScene("/view/AccidentHelp.fxml"); Main.changeScene("/view/ReminderPage.fxml"); }
-    @FXML public void goToAddSituation() { Main.changeScene("/view/AddSituationForm.fxml"); }
-    @FXML public void goToVolunteer()    { Main.changeScene("/view/VolunteerForm.fxml"); }
-    @FXML public void goToSeekHelp()     { Main.changeScene("/view/SeekHelpPage.fxml"); }
-    @FXML public void goToAbout()        { Main.changeScene("/view/About.fxml"); }
-    @FXML public void goToCredits()      { Main.changeScene("/view/Credits.fxml"); }
-    @FXML public void goToHome()         { Main.changeScene("/view/HomePage.fxml"); }
+
 
     @FXML
     public void findServiceNumber() {
@@ -164,4 +142,51 @@ public class AccidentHelpController {
             e.printStackTrace();
         }
     }
+
+
+    /* ---------------------- Navigation / actions ---------------------- */
+
+    @FXML
+    public void goToInput(MouseEvent event) {
+        ImageView clicked = (ImageView) event.getSource();
+        String condition = clicked.getId(); // choking, cpr, seizure, burn, bleeding, snakebite
+
+        boolean needsInput = condition.equals("burn")
+                || condition.equals("bleeding")
+                || condition.equals("snakebite");
+
+        // Always set base context FIRST (some implementations clear other fields)
+        TreatmentContext.setContext("accident", condition);
+
+        if (needsInput) {
+            Main.setPreviousScene("/view/AccidentHelp.fxml");
+            Main.changeScene("/view/AccidentInput.fxml");
+        } else {
+            // Ensure TreatmentPage has safe values even on a cold start
+            if (TreatmentContext.getAge() == null || TreatmentContext.getAge().isBlank()) {
+                TreatmentContext.setAge("0");
+            }
+            if (TreatmentContext.getGender() == null || TreatmentContext.getGender().isBlank()) {
+                TreatmentContext.setGender("Unknown");
+            }
+            if (TreatmentContext.getLocation() == null || TreatmentContext.getLocation().isBlank()) {
+                TreatmentContext.setLocation("Unknown");
+            }
+            TreatmentContext.setMinorSymptoms(null);
+
+            Main.setPreviousScene("/view/AccidentHelp.fxml");
+            Main.changeScene("/view/TreatmentPage.fxml");
+        }
+    }
+
+
+
+    @FXML public void goBack()           { Main.changeScene("/view/HomePage.fxml"); }
+    @FXML public void goToReminder()     { Main.setPreviousScene("/view/AccidentHelp.fxml"); Main.changeScene("/view/ReminderPage.fxml"); }
+    @FXML public void goToAddSituation() { Main.changeScene("/view/AddSituationForm.fxml"); }
+    @FXML public void goToVolunteer()    { Main.changeScene("/view/VolunteerForm.fxml"); }
+    @FXML public void goToSeekHelp()     { Main.changeScene("/view/SeekHelpPage.fxml"); }
+    @FXML public void goToAbout()        { Main.changeScene("/view/About.fxml"); }
+    @FXML public void goToCredits()      { Main.changeScene("/view/Credits.fxml"); }
+    @FXML public void goToHome()         { Main.changeScene("/view/HomePage.fxml"); }
 }

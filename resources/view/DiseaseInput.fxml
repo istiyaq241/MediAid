@@ -39,7 +39,7 @@
     <bottom>
         <HBox spacing="12" alignment="CENTER">
             <padding><Insets top="12" right="12" bottom="12" left="12"/></padding>
-            <Button text="← Back" onAction="#goBack"/>
+            <Button text="← Back" onAction="#goBackD"/>
             <Button text="Reminders" onAction="#goToReminder"/>
             <Button text="→ Continue" onAction="#submitForm"/>
         </HBox>

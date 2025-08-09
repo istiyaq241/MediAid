@@ -88,7 +88,7 @@ public class AccidentInputController {
     }
 
     @FXML
-    public void goBack() {
+    public void goBackA() {
         Main.changeScene("/view/AccidentHelp.fxml");
     }
 }

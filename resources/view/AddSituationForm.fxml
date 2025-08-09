@@ -15,6 +15,6 @@
         <TextField fx:id="locationField" promptText="Location"/>
         <TextArea fx:id="situationField" promptText="Describe the situation..." prefHeight="100"/>
         <Button text="Submit" onAction="#submitSituation"/>
-        <fx:include source="components/GlobalNav.fxml"/>
+        <fx:include source="/view/components/BackBar.fxml"/>
     </VBox>
 </AnchorPane>

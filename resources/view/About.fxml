@@ -28,7 +28,7 @@
                 <TextFlow fx:id="aboutFlow" textAlignment="JUSTIFY" prefWidth="800">
                     <Text fx:id="aboutText" wrappingWidth="780"/>
                 </TextFlow>
-                <fx:include source="components/GlobalNav.fxml"/>
+                <fx:include source="/view/components/BackBar.fxml"/>
             </VBox>
         </ScrollPane>
     </VBox>

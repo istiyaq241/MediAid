@@ -37,7 +37,7 @@
             <Button text="📌 Primary" onAction="#showPrimary"/>
             <Button text="✅ Final Advice" onAction="#showFinal"/>
             <Button text="⚠️ Warnings" onAction="#showWarnings"/>
-            <fx:include source="components/GlobalNav.fxml"/>
+            <fx:include source="/view/components/BackBar.fxml"/>
         </VBox>
     </right>
 

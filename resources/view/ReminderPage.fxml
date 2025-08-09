@@ -19,6 +19,6 @@
                 <TableColumn fx:id="timeCol" text="Time Remaining" prefWidth="250"/>
             </columns>
         </TableView>
-        <fx:include source="components/GlobalNav.fxml"/>
+        <fx:include source="/view/components/BackBar.fxml"/>
     </VBox>
 </AnchorPane>

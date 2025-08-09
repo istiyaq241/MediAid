@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<!-- Minimal global nav: only a Back button -->
-<HBox xmlns:fx="http://javafx.com/fxml"
+<VBox xmlns:fx="http://javafx.com/fxml"
       fx:controller="mediAid.controller.GlobalNavController"
-      alignment="CENTER_RIGHT" spacing="10">
-    <Button text="← Back" onAction="#goBack"/>
-</HBox>
+      spacing="10" alignment="CENTER_LEFT"
+      style="-fx-background-color: white; -fx-padding: 12; -fx-border-color: #1976d2; -fx-border-width: 2;">
+    <HBox alignment="CENTER_LEFT" spacing="10">
+        <Label text="Options" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+        <Pane HBox.hgrow="ALWAYS"/>
+        <Button text="✕" onAction="#toggleMenu"/>
+    </HBox>
+    <Separator/>
+    <Label text="Quick Navigation" style="-fx-font-weight: bold;"/>
+    <Button text="🏠 Home" onAction="#goToHome" maxWidth="Infinity"/>
+    <Button text="📝 Add Situation" onAction="#goToAddSituation" maxWidth="Infinity"/>
+    <Button text="🤝 Volunteer" onAction="#goToVolunteer" maxWidth="Infinity"/>
+    <Button text="🆘 Seek Help" onAction="#goToSeekHelp" maxWidth="Infinity"/>
+    <Button text="ℹ About" onAction="#goToAbout" maxWidth="Infinity"/>
+    <Button text="🎖 Credits" onAction="#goToCredits" maxWidth="Infinity"/>
+    <Button text="⏰ Reminders" onAction="#goToReminder" maxWidth="Infinity"/>
+    <Button text="← Back" onAction="#goBack" maxWidth="Infinity"/>
+</VBox>

@@ -101,7 +101,7 @@ public class DiseaseInputController {
     }
 
     @FXML
-    public void goBack() {
+    public void goBackD() {
         Main.changeScene("/view/DiseaseHelp.fxml");
     }
 
